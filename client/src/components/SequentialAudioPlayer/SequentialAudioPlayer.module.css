@@ -1,0 +1,179 @@
+.sequentialPlayer {
+  padding: 0.75rem 1rem;
+  background: #f8f6f2;
+  border-radius: 10px;
+  border: 1px solid #8b7355;
+  box-shadow: 0 1px 3px rgba(139, 115, 85, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.8125rem;
+}
+
+.chunkInfo {
+  color: #5c4a3a;
+  font-weight: 500;
+}
+
+.roleLabel {
+  color: #7a6b5c;
+  font-size: 0.75rem;
+}
+
+.controlsRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 36px;
+}
+
+.playBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #5a1a1a;
+  color: #fff;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.playBtn:hover {
+  background: #6d2222;
+}
+
+.playBtn:active {
+  transform: scale(0.96);
+}
+
+.timeCurrent,
+.timeTotal {
+  font-size: 0.75rem;
+  color: #7a6b5c;
+  min-width: 2.5ch;
+  flex-shrink: 0;
+}
+
+.progressBar {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  height: 24px;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+.progressTrack {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background: #e0d9cf;
+  border-radius: 2px;
+  overflow: visible;
+}
+
+.progressBar:hover .progressTrack {
+  background: #d4cbbf;
+}
+
+.progress {
+  height: 100%;
+  background: #5a1a1a;
+  border-radius: 2px;
+  transition: width 0.1s linear;
+  position: relative;
+}
+
+.progress::after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background: #5a1a1a;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.progressBar:hover .progress::after {
+  opacity: 1;
+}
+
+.volumeWrap,
+.ambientVolumeWrap {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  flex-shrink: 0;
+}
+
+.ambientVolumeWrap {
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+  border-left: 1px solid #d4cbbf;
+}
+
+.volumeLabel {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: #5c4a3a;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  min-width: 3.5ch;
+}
+
+.volumeIcon {
+  color: #7a6b5c;
+  opacity: 0.9;
+  flex-shrink: 0;
+}
+
+.volumeSlider {
+  width: 60px;
+  height: 3px;
+  background: #e0d9cf;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.volumeSlider::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #5a1a1a;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.volumeSlider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: #5a1a1a;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.empty {
+  padding: 2rem;
+  text-align: center;
+  color: #7a6b5c;
+  font-size: 0.875rem;
+}

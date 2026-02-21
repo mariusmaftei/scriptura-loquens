@@ -1,0 +1,193 @@
+.page {
+  padding: 2rem 0;
+  min-height: 60vh;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-primary, #2b2b2b);
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--color-text-secondary, #6c757d);
+  margin: 0;
+}
+
+.loading,
+.empty,
+.error {
+  padding: 3rem;
+  text-align: center;
+  color: var(--color-text-muted, #6c757d);
+  font-size: 1rem;
+}
+
+.error {
+  color: var(--color-error, #c92a2a);
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.link {
+  color: #5a1a1a;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: 1px solid #8b7355;
+  border-radius: 8px;
+  background: #fff;
+  transition: all 0.15s ease;
+}
+
+.link:hover {
+  background: #f8f6f2;
+  border-color: #5a1a1a;
+}
+
+.pdfSection {
+  margin-bottom: 2rem;
+}
+
+.pdfSectionCard {
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 1px 3px rgba(90, 26, 26, 0.04);
+}
+
+.pdfSectionRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+.select {
+  flex: 1;
+  min-width: 200px;
+  max-width: 420px;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.9375rem;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background: #fff;
+  color: #212529;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #8b7355;
+  box-shadow: 0 0 0 2px rgba(139, 115, 85, 0.15);
+}
+
+.openDocBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #fff;
+  background: #5a1a1a;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.openDocBtn:hover {
+  background: #6d2222;
+}
+
+.openDocBtn svg {
+  flex-shrink: 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  padding: 1.5rem;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cardIcon {
+  color: #5a1a1a;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--color-text-primary, #2b2b2b);
+}
+
+.cardDesc {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary, #6c757d);
+  margin: 0;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.cardAction {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #fff;
+  background: #5a1a1a;
+  border-radius: 8px;
+  text-decoration: none;
+  width: fit-content;
+  transition: background 0.15s;
+}
+
+.cardAction:hover {
+  background: #6d2222;
+}
+
+.cardComing {
+  font-size: 0.8125rem;
+  color: #868e96;
+  font-style: italic;
+}

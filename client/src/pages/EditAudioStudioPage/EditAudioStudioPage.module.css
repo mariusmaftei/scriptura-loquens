@@ -1,0 +1,484 @@
+.page {
+  padding: 2rem 0;
+  min-height: 60vh;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: #5a1a1a;
+  text-decoration: none;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2b2b2b;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #6c757d;
+  margin: 0 0 0.5rem 0;
+}
+
+.docName {
+  font-size: 0.875rem;
+  color: #495057;
+  margin: 0 0 1rem 0;
+}
+
+.nameInputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.nameLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #495057;
+}
+
+.nameInput {
+  width: 220px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9375rem;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.nameInput:focus {
+  outline: none;
+  border-color: #8b7355;
+  box-shadow: 0 0 0 2px rgba(139, 115, 85, 0.2);
+}
+
+.nameHint {
+  font-size: 0.8125rem;
+  color: #6c757d;
+  margin: 0 0 1rem 0;
+}
+
+.filterRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.filterLabel {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #495057;
+}
+
+.filterButtons {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.filterBtn,
+.filterBtnActive {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+  background: #f8f9fa;
+  color: #495057;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.filterBtn:hover {
+  background: #e9ecef;
+  border-color: #ced4da;
+}
+
+.filterBtnActive {
+  background: #5a1a1a;
+  border-color: #5a1a1a;
+  color: #fff;
+}
+
+.filterBtnActive:hover {
+  background: #6d2222;
+  border-color: #6d2222;
+  color: #fff;
+}
+
+.submitRow {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e9ecef;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.submitHint {
+  font-size: 0.875rem;
+  color: #6c757d;
+  margin: 0;
+}
+
+.submitBtn {
+  padding: 0.625rem 1.25rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #fff;
+  background: #5a1a1a;
+  border: 1px solid #5a1a1a;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background: #6d2222;
+  border-color: #6d2222;
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.loading,
+.error {
+  padding: 2rem;
+  text-align: center;
+  color: #6c757d;
+}
+
+.error {
+  color: #c92a2a;
+}
+
+.segmentList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.segment {
+  padding: 1rem 1.25rem;
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.segmentHasCustom:not(.segmentCollapsed) {
+  background: #faf8f5;
+  border-color: #d4c4a8;
+}
+
+.segmentCollapsed {
+  padding: 0.6rem 1rem;
+}
+
+.segmentCollapsed.segmentHasCustom {
+  background: #f1ebe2;
+  border-color: #8b7355;
+}
+
+.collapsedRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.collapsedText {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.875rem;
+  color: #5c4a3a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.replaceBtn {
+  padding: 0.35rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #5a1a1a;
+  background: transparent;
+  border: 1px solid #8b7355;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.15s, color 0.15s;
+}
+
+.replaceBtn:hover {
+  background: rgba(139, 115, 85, 0.15);
+  color: #5a1a1a;
+}
+
+.previewBtn,
+.previewBtnActive {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.previewBtn {
+  color: #5a1a1a;
+  background: rgba(139, 115, 85, 0.12);
+  border: 1px solid #8b7355;
+}
+
+.previewBtn:hover {
+  background: rgba(139, 115, 85, 0.22);
+}
+
+.previewBtnActive {
+  color: #fff;
+  background: #5a1a1a;
+  border: 1px solid #5a1a1a;
+}
+
+.previewBtnActive:hover {
+  background: #6d2222;
+  border-color: #6d2222;
+}
+
+.collapseBtn {
+  padding: 0.35rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #6c757d;
+  background: transparent;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.collapseBtn:hover {
+  background: #f1f3f5;
+  border-color: #ced4da;
+}
+
+.countdownWrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.countdownNum {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #5a1a1a;
+  background: #f1ebe2;
+  border: 2px solid #8b7355;
+  border-radius: 50%;
+  line-height: 1;
+}
+
+.countdownLabel {
+  font-size: 0.875rem;
+  color: #5c4a3a;
+  font-weight: 500;
+}
+
+.cancelCountdownBtn {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #6c757d;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.cancelCountdownBtn:hover {
+  background: #f8f9fa;
+  border-color: #ced4da;
+  color: #495057;
+}
+
+.recordingWrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.waveformCanvas {
+  display: block;
+  height: 48px;
+  width: 280px;
+  max-width: 100%;
+  border-radius: 6px;
+  background: #f1ebe2;
+  border: 1px solid #8b7355;
+}
+
+.segmentHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.roleLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #495057;
+  padding: 0.25rem 0.5rem;
+  background: #e9ecef;
+  border-radius: 4px;
+}
+
+.badge {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #5a1a1a;
+  padding: 0.2rem 0.5rem;
+  background: #f8f6f2;
+  border: 1px solid #8b7355;
+  border-radius: 4px;
+}
+
+.segmentText {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #212529;
+  margin: 0;
+}
+
+.segmentActions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.fileInput {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.attachBtn,
+.recordBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #dee2e6;
+  background: #f8f9fa;
+  color: #495057;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.attachBtn:hover:not(:disabled),
+.recordBtn:hover:not(:disabled) {
+  background: #e9ecef;
+  border-color: #ced4da;
+  color: #212529;
+}
+
+.attachBtn:disabled,
+.recordBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.recordBtn {
+  background: #fff;
+  color: #5a1a1a;
+  border-color: #8b7355;
+}
+
+.recordBtn:hover:not(:disabled) {
+  background: #f8f6f2;
+  border-color: #5a1a1a;
+}
+
+.recordBtnActive {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #5a1a1a;
+  background: #5a1a1a;
+  color: #fff;
+}
+
+.recordBtnActive:hover {
+  background: #6d2222;
+  border-color: #6d2222;
+}
+
+.recordDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}

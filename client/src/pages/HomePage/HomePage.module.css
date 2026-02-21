@@ -1,0 +1,115 @@
+.homePage {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.bibleImage {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  opacity: 0.85;
+  mix-blend-mode: multiply;
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.1));
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2b2b2b;
+  margin: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.heroTitleGradient {
+  background: linear-gradient(135deg, #5a1a1a 0%, #c9a24d 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 3.5rem;
+  }
+}
+
+.heroSubtitle {
+  font-size: 1.125rem;
+  color: #495057;
+  margin: 0;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+@media (min-width: 768px) {
+  .heroSubtitle {
+    font-size: 1.25rem;
+  }
+}
+
+.heroActions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.exploreButton {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #5a1a1a 0%, #c9a24d 100%);
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(90, 26, 26, 0.2);
+}
+
+.exploreButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(90, 26, 26, 0.3);
+  background: linear-gradient(135deg, #6a1f1f 0%, #d4b356 100%);
+}
+
+.exploreButton:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(90, 26, 26, 0.2);
+}
