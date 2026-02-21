@@ -1,0 +1,1 @@
+im creating a app in react python AI based and is for filtering bible and cland the pdf return clean tect and send to AI to extract the chunks based of the narator sheech and character speech .. after that an ai that will read the returned text .. app will ahve multiple voice based of the rocle "narator" character A,B,C .. what i shoyuld name the app?
