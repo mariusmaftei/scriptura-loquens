@@ -1,7 +1,7 @@
 def _gemini_model():
     try:
         from google import genai  # noqa: F401
-        return 'gemini-3-flash-preview'
+        return 'gemini-2.5-flash'
     except ImportError:
         return 'gemini-1.5-flash'
 

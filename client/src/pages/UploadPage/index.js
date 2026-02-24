@@ -35,8 +35,7 @@ const UploadPage = () => {
         <section className={styles.header}>
           <h1 className={styles.title}>Import</h1>
           <p className={styles.subtitle}>
-            Încarcă un document PDF biblic pentru procesare. Sistemul va
-            extrage textul, detecta limba și analiza conținutul automat.
+            Încarcă un document PDF biblic. Sistemul extrage textul, detectează limba și analizează conținutul cu pipeline-ul pe reguli (layout), fără AI.
           </p>
         </section>
 

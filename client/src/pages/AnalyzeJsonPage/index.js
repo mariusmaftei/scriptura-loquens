@@ -63,8 +63,7 @@ const AnalyzeJsonPage = () => {
         <section className={styles.header}>
           <h1 className={styles.title}>Analiză JSON</h1>
           <p className={styles.subtitle}>
-            Încarcă un PDF biblic și obține rezultatul în format JSON. Ideal pentru
-            analiză, debugging sau trimitere către AI.
+            Încarcă un PDF biblic și obține JSON-ul analizat. Se folosește doar pipeline-ul pe reguli (layout), fără AI.
           </p>
         </section>
 
@@ -111,9 +110,14 @@ const AnalyzeJsonPage = () => {
           <section className={styles.resultSection}>
             <div className={styles.resultHeader}>
               <h2 className={styles.resultTitle}>Rezultat JSON</h2>
-              <Button variant="outline" size="sm" onClick={handleCopy}>
-                {copied ? "Copiat!" : "Copiază"}
-              </Button>
+              <div className={styles.resultHeaderRight}>
+                <span className={styles.pipelineBadge}>
+                  Pipeline: Bible (reguli, fără AI)
+                </span>
+                <Button variant="outline" size="sm" onClick={handleCopy}>
+                  {copied ? "Copiat!" : "Copiază"}
+                </Button>
+              </div>
             </div>
             <pre className={styles.jsonBlock}>
               <code>{JSON.stringify(jsonResult, null, 2)}</code>

@@ -4,6 +4,7 @@ from app.database import db
 from app.models import PDF, ExtractedText, Chunk, AmbientTrack
 from app.services.pdf_service import process_pdf_file, process_pdf_file_with_format
 from app.services.gemini_service import analyze_text_in_batches
+from app.services.tts_service import prepare_text_for_tts
 from app.utils.file_handler import save_uploaded_file, generate_file_hash
 from app.config import Config
 import json
@@ -34,11 +35,55 @@ def analyze_pdf_json():
         result = process_pdf_file_with_format(tmp_path)
         format_lines = result.get('format_lines') or []
         chunks_data = analyze_text_in_batches(format_lines=format_lines) if format_lines else analyze_text_in_batches(result.get('cleaned_text', ''))
+        tts_preview_items = []
+        tts_total_chars = 0
+        pos = 0
+        for c in chunks_data:
+            ctype = c.get('chunk_type', 'verse')
+            for seg in (c.get('segments') or []):
+                pos += 1
+                raw = (seg.get('text') or '').strip()
+                text_for_tts = prepare_text_for_tts(raw, ctype)
+                n = len(text_for_tts)
+                tts_total_chars += n
+                tts_preview_items.append({
+                    'position': pos,
+                    'chunk_type': ctype,
+                    'role': seg.get('role', 'narrator'),
+                    'character_name': seg.get('character_name'),
+                    'verse_num': c.get('verse_num') if ctype == 'verse' else None,
+                    'text_raw': raw,
+                    'text_for_tts': text_for_tts,
+                    'character_count': n,
+                })
+            if not c.get('segments'):
+                pos += 1
+                raw = (c.get('text') or '').strip()
+                text_for_tts = prepare_text_for_tts(raw, ctype)
+                n = len(text_for_tts)
+                tts_total_chars += n
+                tts_preview_items.append({
+                    'position': pos,
+                    'chunk_type': ctype,
+                    'role': c.get('role', 'narrator'),
+                    'character_name': c.get('character_name'),
+                    'verse_num': c.get('verse_num') if ctype == 'verse' else None,
+                    'text_raw': raw,
+                    'text_for_tts': text_for_tts,
+                    'character_count': n,
+                })
         out = {
             'filename': file.filename,
             'language': result.get('language_code'),
             'language_name': result.get('language_name'),
             'chunks': chunks_data,
+            'pipeline': 'bible',
+            'format_lines': [{'text': l.get('text'), 'font_size': l.get('font_size'), 'alignment': l.get('alignment', 'left')} for l in format_lines] if format_lines else None,
+            'tts_preview': {
+                'chunks': tts_preview_items,
+                'total_character_count': tts_total_chars,
+                'chunk_count': len(tts_preview_items),
+            },
         }
         return jsonify(out), 200
     except Exception as e:
@@ -71,13 +116,17 @@ def upload_pdf():
         if existing_pdf:
             existing_pdf.file_path = file_path
             existing_pdf.filename = file.filename
+            existing_pdf.use_ai = False
+            existing_pdf.pipeline = 'bible'
             db.session.commit()
             return jsonify(existing_pdf.to_dict()), 200
         pdf = PDF(
             filename=file.filename,
             file_hash=file_hash,
             file_path=file_path,
-            status='pending'
+            status='pending',
+            use_ai=False,
+            pipeline='bible',
         )
         db.session.add(pdf)
         db.session.commit()
@@ -158,7 +207,7 @@ def process_pdf(pdf_id):
         if existing_text:
             cleaned_text_to_use = existing_text.cleaned_text
             if existing_text.raw_text:
-                format_lines_to_use = [{'text': ln, 'font_size': 12.0, 'is_non_black': False}
+                format_lines_to_use = [{'text': ln, 'font_size': 12.0, 'is_non_black': False, 'alignment': 'left'}
                                        for ln in existing_text.raw_text.split('\n') if ln.strip()]
         else:
             result = process_pdf_file_with_format(file_path)

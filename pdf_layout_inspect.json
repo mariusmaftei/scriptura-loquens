@@ -1,0 +1,535 @@
+{
+  "pdf_path": "c:\\Users\\Marius Maftei\\AppData\\Roaming\\Cursor\\User\\workspaceStorage\\fcd7304800c13d488ffb90042f241456\\pdfs\\49831444-458e-44e4-a2cd-641a6f201d16\\Biblia-in-limba-romana-Dumitru Cornilescu-page 5.pdf",
+  "total_raw_lines": 49,
+  "total_lines_after_normalize": 48,
+  "lines": [
+    {
+      "text": "GENEZA",
+      "font_size": 17.0,
+      "page_no": 1,
+      "bbox": [
+        271.70001220703125,
+        70.73760986328125,
+        323.7952880859375,
+        90.47686767578125
+      ]
+    },
+    {
+      "text": "Capitolul 1",
+      "font_size": 13.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        104.5301513671875,
+        106.66818237304688,
+        120.3294677734375
+      ]
+    },
+    {
+      "text": "Vremurile străvechi de la facerea lumii până la Avraam*",
+      "font_size": 13.0,
+      "page_no": 1,
+      "bbox": [
+        39.20000076293945,
+        126.27911376953125,
+        420.4051818847656,
+        141.05010986328125
+      ]
+    },
+    {
+      "text": "*Gen. 1 - Gen. 11:9",
+      "font_size": 9.0,
+      "page_no": 1,
+      "bbox": [
+        39.20000076293945,
+        145.2662353515625,
+        108.33700561523438,
+        155.44677734375
+      ]
+    },
+    {
+      "text": "Facerea lumii",
+      "font_size": 13.0,
+      "page_no": 1,
+      "bbox": [
+        39.20000076293945,
+        161.4791259765625,
+        132.79638671875,
+        176.2501220703125
+      ]
+    },
+    {
+      "text": "1. La început*, Dumnezeu a făcut** cerurile şi pământul.",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        180.6622314453125,
+        292.3721008300781,
+        194.095703125
+      ]
+    },
+    {
+      "text": "*Ioan 1:1, 2; Evr. 1:10. **Ps. 8:3; Ps. 33:6; Ps. 89:11, 12; Ps. 102:25; Ps. 136:5; Ps. 146:6; Isa. 44:24; Ier. 10:12; Ier. 51:15; Zah. 12:1; Fap. 14:15;",
+      "font_size": 9.0,
+      "page_no": 1,
+      "bbox": [
+        39.20000076293945,
+        194.2662353515625,
+        562.5923461914062,
+        204.44677734375
+      ]
+    },
+    {
+      "text": "Fap. 17:24; Col. 1:16, 17; Evr. 11:3; Apoc. 4:11; Apoc. 10:6",
+      "font_size": 9.0,
+      "page_no": 1,
+      "bbox": [
+        39.20000076293945,
+        204.8800048828125,
+        254.8309783935547,
+        214.8468017578125
+      ]
+    },
+    {
+      "text": "Lumina",
+      "font_size": 13.0,
+      "page_no": 1,
+      "bbox": [
+        39.20000076293945,
+        220.87908935546875,
+        92.35903930664062,
+        235.65008544921875
+      ]
+    },
+    {
+      "text": "2. Pământul era pustiu şi gol; peste faţa adâncului de ape era întuneric, şi* Duhul lui Dumnezeu Se mişca pe",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        240.06219482421875,
+        544.4440307617188,
+        253.4957275390625
+      ]
+    },
+    {
+      "text": "deasupra apelor.",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        254.00665283203125,
+        106.70399475097656,
+        267.29571533203125
+      ]
+    },
+    {
+      "text": "*Ps. 33:6; Isa. 40:13, 14",
+      "font_size": 9.0,
+      "page_no": 1,
+      "bbox": [
+        39.20000076293945,
+        267.4661865234375,
+        124.52798461914062,
+        277.64678955078125
+      ]
+    },
+    {
+      "text": "3. Dumnezeu* a zis: „Să fie** lumină!” Şi a fost lumină.",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        278.06219482421875,
+        289.93206787109375,
+        291.4957275390625
+      ]
+    },
+    {
+      "text": "*Ps. 33:9. **2Cor. 4:6",
+      "font_size": 9.0,
+      "page_no": 1,
+      "bbox": [
+        39.20000076293945,
+        291.66619873046875,
+        113.98001098632812,
+        301.8468017578125
+      ]
+    },
+    {
+      "text": "4. Dumnezeu a văzut că lumina era bună; şi Dumnezeu a despărţit lumina de întuneric.",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        302.4066162109375,
+        440.7322998046875,
+        315.6956787109375
+      ]
+    },
+    {
+      "text": "5. Dumnezeu a numit lumina zi*, iar întunericul l-a numit noapte. Astfel, a fost o seară, şi apoi a fost o",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        316.06219482421875,
+        517.0762939453125,
+        329.4957275390625
+      ]
+    },
+    {
+      "text": "dimineaţă: aceasta a fost ziua întâi.",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        330.00665283203125,
+        196.22402954101562,
+        343.29571533203125
+      ]
+    },
+    {
+      "text": "*Ps. 74:16; Ps. 104:20",
+      "font_size": 9.0,
+      "page_no": 1,
+      "bbox": [
+        39.20000076293945,
+        343.4662170410156,
+        118.05699157714844,
+        353.64678955078125
+      ]
+    },
+    {
+      "text": "Cerul",
+      "font_size": 13.0,
+      "page_no": 1,
+      "bbox": [
+        39.20000076293945,
+        359.6791076660156,
+        76.1134033203125,
+        374.4501037597656
+      ]
+    },
+    {
+      "text": "6. Dumnezeu a zis: „Să fie* o întindere între ape, şi ea să despartă apele de ape.”",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        378.8622131347656,
+        409.3743591308594,
+        392.29571533203125
+      ]
+    },
+    {
+      "text": "*Iov 37:18; Ps. 136:5; Ier. 10:12; Ier. 51:15",
+      "font_size": 9.0,
+      "page_no": 1,
+      "bbox": [
+        39.20000076293945,
+        392.4662170410156,
+        193.1709747314453,
+        402.64678955078125
+      ]
+    },
+    {
+      "text": "7. Şi Dumnezeu a făcut întinderea, şi ea a despărţit* apele care sunt dedesubtul întinderii de apele care sunt",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        403.06219482421875,
+        539.34033203125,
+        416.4956970214844
+      ]
+    },
+    {
+      "text": "deasupra** întinderii. Şi aşa a fost.",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        416.8622131347656,
+        191.66798400878906,
+        430.29571533203125
+      ]
+    },
+    {
+      "text": "*Prov. 8:28. **Ps. 148:4",
+      "font_size": 9.0,
+      "page_no": 1,
+      "bbox": [
+        39.20000076293945,
+        430.4662170410156,
+        121.98899841308594,
+        440.64678955078125
+      ]
+    },
+    {
+      "text": "8. Dumnezeu a numit întinderea cer. Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a doua.",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        441.2066345214844,
+        556.4002685546875,
+        454.4956970214844
+      ]
+    },
+    {
+      "text": "Pământul",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        39.20000076293945,
+        460.49609375,
+        101.20990753173828,
+        474.130859375
+      ]
+    },
+    {
+      "text": "9. Dumnezeu a zis: „Să* se strângă la un loc apele care sunt dedesubtul cerului şi să se arate uscatul!” Şi aşa a",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        478.46221923828125,
+        552.9682006835938,
+        491.89569091796875
+      ]
+    },
+    {
+      "text": "fost.",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        492.4066467285156,
+        49.391998291015625,
+        505.6957092285156
+      ]
+    },
+    {
+      "text": "*Iov 26:10; Iov 38:8; Ps. 33:7; Ps. 95:5; Ps. 104:9; Ps. 136:6; Prov. 8:29; Ier. 5:22; 2Pet. 3:5",
+      "font_size": 9.0,
+      "page_no": 1,
+      "bbox": [
+        39.20000076293945,
+        505.9662170410156,
+        368.5181579589844,
+        516.1467895507812
+      ]
+    },
+    {
+      "text": "10. Dumnezeu a numit uscatul pământ, iar grămada de ape a numit-o mări. Dumnezeu a văzut că lucrul acesta",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        516.6066284179688,
+        553.500244140625,
+        529.8956909179688
+      ]
+    },
+    {
+      "text": "era bun.",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        530.4066162109375,
+        67.10399627685547,
+        543.6956787109375
+      ]
+    },
+    {
+      "text": "11. Apoi Dumnezeu a zis: „Să dea* pământul verdeaţă, iarbă cu sămânţă, pomi roditori**, care să facă rod după",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        544.0621948242188,
+        555.1840209960938,
+        557.4957275390625
+      ]
+    },
+    {
+      "text": "soiul lor şi care să aibă în ei sămânţa lor pe pământ.” Şi aşa a fost.",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        558.0066528320312,
+        345.18011474609375,
+        571.2957153320312
+      ]
+    },
+    {
+      "text": "*Evr. 6:7. **Luc. 6:44",
+      "font_size": 9.0,
+      "page_no": 1,
+      "bbox": [
+        39.20000076293945,
+        571.5662231445312,
+        114.47000122070312,
+        581.7467651367188
+      ]
+    },
+    {
+      "text": "12. Pământul a dat verdeaţă, iarbă cu sămânţă după soiul ei şi pomi care fac rod şi care îşi au sămânţa în ei, după",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        582.2066650390625,
+        565.692138671875,
+        595.4957275390625
+      ]
+    },
+    {
+      "text": "soiul lor. Dumnezeu a văzut că lucrul acesta era bun.",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        596.0066528320312,
+        281.34002685546875,
+        609.2957153320312
+      ]
+    },
+    {
+      "text": "13. Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a treia.",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        609.806640625,
+        393.7802734375,
+        623.095703125
+      ]
+    },
+    {
+      "text": "Soarele, luna şi stelele",
+      "font_size": 13.0,
+      "page_no": 1,
+      "bbox": [
+        39.20000076293945,
+        629.1790771484375,
+        190.20965576171875,
+        643.9500732421875
+      ]
+    },
+    {
+      "text": "14. Dumnezeu a zis: „Să fie nişte luminători* în întinderea cerului, ca să despartă ziua de noapte; ei să fie nişte",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        648.26220703125,
+        555.3043212890625,
+        661.6956787109375
+      ]
+    },
+    {
+      "text": "semne** care să arate vremurile, zilele şi anii;",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        662.0621948242188,
+        245.1740264892578,
+        675.4957275390625
+      ]
+    },
+    {
+      "text": "*Deut. 4:19; Ps. 74:16; Ps. 136:7. **Ps. 74:17; Ps. 104:19",
+      "font_size": 9.0,
+      "page_no": 1,
+      "bbox": [
+        39.20000076293945,
+        675.7662353515625,
+        242.25698852539062,
+        685.94677734375
+      ]
+    },
+    {
+      "text": "15. şi să slujească de luminători în întinderea cerului, ca să lumineze pământul.” Şi aşa a fost.",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        686.4066162109375,
+        470.7362976074219,
+        699.6956787109375
+      ]
+    },
+    {
+      "text": "16. Dumnezeu* a făcut cei doi mari luminători, şi anume: luminătorul cel mai mare ca să stăpânească ziua, şi**",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        700.0621948242188,
+        554.0,
+        713.4957275390625
+      ]
+    },
+    {
+      "text": "luminătorul cel mai mic ca să stăpânească noaptea; a făcut şi† stelele.",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        713.8621826171875,
+        359.6040954589844,
+        727.2957153320312
+      ]
+    },
+    {
+      "text": "*Ps. 136:7, 8, 9; Ps. 148:3, 5. **Ps. 8:3. †Iov 38:7",
+      "font_size": 9.0,
+      "page_no": 1,
+      "bbox": [
+        39.20000076293945,
+        727.5662231445312,
+        212.06797790527344,
+        737.7467651367188
+      ]
+    },
+    {
+      "text": "17. Dumnezeu i-a aşezat în întinderea cerului ca să lumineze pământul,",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        738.2066650390625,
+        364.1162414550781,
+        751.4957275390625
+      ]
+    },
+    {
+      "text": "18. să stăpânească* ziua şi noaptea şi să despartă lumina de întuneric. Dumnezeu a văzut că lucrul acesta era bun.",
+      "font_size": 12.0,
+      "page_no": 1,
+      "bbox": [
+        28.5,
+        751.8621826171875,
+        564.8722534179688,
+        765.2957153320312
+      ]
+    },
+    {
+      "text": "*Ier. 31:35",
+      "font_size": 9.0,
+      "page_no": 1,
+      "bbox": [
+        39.20000076293945,
+        765.5662231445312,
+        76.27000427246094,
+        775.7467651367188
+      ]
+    }
+  ]
+}

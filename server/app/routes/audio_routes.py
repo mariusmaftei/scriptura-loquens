@@ -113,6 +113,36 @@ def get_available_voices(pdf_id):
     voices = get_available_voices_for_language(language_code)
     return jsonify(voices)
 
+@bp.route('/pdf/<int:pdf_id>/tts-preview', methods=['GET'])
+def get_tts_preview(pdf_id):
+    """Return the exact text that would be sent to TTS (ElevenLabs/Edge/Google) for each chunk, without calling TTS. Use to review cleanliness and character count before generating audio."""
+    pdf = PDF.query.get_or_404(pdf_id)
+    chunks = Chunk.query.filter_by(pdf_id=pdf_id).order_by(Chunk.position).all()
+    items = []
+    total_chars = 0
+    for c in chunks:
+        text_raw = (c.text or '').strip()
+        text_for_tts = prepare_text_for_tts(c.text, c.chunk_type)
+        char_count = len(text_for_tts)
+        total_chars += char_count
+        items.append({
+            'position': c.position,
+            'chunk_type': c.chunk_type,
+            'role': c.role,
+            'character_name': c.character_name,
+            'verse_num': c.verse_num,
+            'text_raw': text_raw,
+            'text_for_tts': text_for_tts,
+            'character_count': char_count,
+        })
+    return jsonify({
+        'pdf_id': pdf_id,
+        'filename': pdf.filename,
+        'chunks': items,
+        'total_character_count': total_chars,
+        'chunk_count': len(items),
+    })
+
 @bp.route('/pdf/<int:pdf_id>/voice-settings', methods=['GET'])
 def get_voice_settings(pdf_id):
     pdf = PDF.query.get_or_404(pdf_id)

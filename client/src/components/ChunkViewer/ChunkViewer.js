@@ -88,7 +88,12 @@ const parseReference = (ref) => {
 };
 
 const VerseReferences = ({ references }) => {
-  if (!references || references.length === 0) return null;
+  const refs = Array.isArray(references)
+    ? references
+    : typeof references === "string" && references.trim()
+    ? references.split(/\s*;\s*/).map((r) => r.trim()).filter(Boolean)
+    : [];
+  if (refs.length === 0) return null;
 
   const handleReferenceClick = (ref) => {
     const parsed = parseReference(ref);
@@ -99,7 +104,7 @@ const VerseReferences = ({ references }) => {
 
   return (
     <div className={styles.references}>
-      {references.map((ref, idx) => {
+      {refs.map((ref, idx) => {
         const parsed = parseReference(ref);
         return (
           <button

@@ -22,9 +22,11 @@ api.interceptors.response.use(
 );
 
 export const pdfAPI = {
-  uploadPDF: async (file) => {
+  uploadPDF: async (file, useAi = false, pipeline = "bible") => {
     const formData = new FormData();
     formData.append("file", file);
+    formData.append("use_ai", "false");
+    formData.append("pipeline", "bible");
 
     const response = await api.post("/upload-pdf", formData, {
       headers: {

@@ -39,6 +39,8 @@ class PDF(db.Model):
     selected_ambient_track_id = db.Column(db.Integer, nullable=True)
     custom_narrator_name = db.Column(db.String(255), nullable=True)
     custom_voice_actor_name = db.Column(db.String(255), nullable=True)
+    use_ai = db.Column(db.Boolean, default=False, nullable=False)
+    pipeline = db.Column(db.String(20), default='bible', nullable=False)
 
     extracted_texts = db.relationship('ExtractedText', backref='pdf', cascade='all, delete-orphan')
     chunks = db.relationship('Chunk', backref='pdf', cascade='all, delete-orphan')
@@ -60,6 +62,8 @@ class PDF(db.Model):
             'selected_ambient_track_id': self.selected_ambient_track_id,
             'custom_narrator_name': self.custom_narrator_name,
             'custom_voice_actor_name': self.custom_voice_actor_name,
+            'use_ai': self.use_ai,
+            'pipeline': getattr(self, 'pipeline', 'bible') or 'bible',
         }
 
 class ExtractedText(db.Model):

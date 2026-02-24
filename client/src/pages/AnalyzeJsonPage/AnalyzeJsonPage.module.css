@@ -123,8 +123,24 @@
 
 .actions {
   display: flex;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 1rem;
   flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+.useAiLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #5c4a3a;
+  cursor: pointer;
+  user-select: none;
+}
+
+.useAiLabel input[type="checkbox"] {
+  cursor: pointer;
 }
 
 .resultSection {
@@ -141,6 +157,17 @@
   padding: 1rem 1.25rem;
   background: #252525;
   border-bottom: 1px solid #333;
+}
+
+.resultHeaderRight {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.pipelineBadge {
+  font-size: 0.75rem;
+  color: #9a8b7a;
 }
 
 .resultTitle {

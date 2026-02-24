@@ -48,8 +48,9 @@ def remove_verse_number_from_text(text, chunk_type=None):
 
 TITLE_CHUNK_TYPES = frozenset({'book_title', 'chapter_number', 'chapter_name', 'section_title'})
 
+_RO_LETTERS = r'A-Za-z\u00C0-\u024f'
 _REF_PATTERN = re.compile(
-    r'[\s*_**†;.]*(?:\d*[A-Za-z\u0100-\u024f]{2,4}\.?\s*\d+:\d+(?:\s*,\s*\d+)*(?:\s*[;\s.])*)+',
+    r'[\s*_**†;.]*(?:\d*[' + _RO_LETTERS + r']{2,4}\.?\s*\d+:\d+(?:\s*,\s*\d+)*(?:\s*[;\s.])*)+',
     re.IGNORECASE
 )
 

@@ -1,11 +1,13 @@
 import re
 
+RO_LETTERS = r'A-Za-z\u00C0-\u024f'  # Romanian: Ăă Ââ Îî Șș Țț
+
 VERSE_REF = re.compile(
-    r"(?:[A-Za-z\u0100-\u024f]{2,4}\.?\s*\d+:\d+(?:\s*,\s*\d+)*\s*[;,]?\s*)+",
+    r"(?:[" + RO_LETTERS + r"]{2,4}\.?\s*\d+:\d+(?:\s*,\s*\d+)*\s*[;,]?\s*)+",
     re.IGNORECASE
 )
 REF_BLOCK = re.compile(
-    r"[\s*_**†]*(?:[A-Za-z\u0100-\u024f]{2,4}\.?\s*\d+(?:\s*:\s*\d+(?:\s*,\s*\d+)*)?(?:\s*[-–]\s*[A-Za-z\u0100-\u024f]{2,4}\.?\s*\d+(?:\s*:\s*\d+)?)?(?:\s*[;,.]\s*(?:[A-Za-z\u0100-\u024f]{2,4}\.?\s*\d+(?:\s*:\s*\d+(?:\s*,\s*\d+)*)?)*)*)\s*[*_**†\s]*",
+    r"[\s*_**†]*(?:[" + RO_LETTERS + r"]{2,4}\.?\s*\d+(?:\s*:\s*\d+(?:\s*,\s*\d+)*)?(?:\s*[-–]\s*[" + RO_LETTERS + r"]{2,4}\.?\s*\d+(?:\s*:\s*\d+)?)?(?:\s*[;,.]\s*(?:[" + RO_LETTERS + r"]{2,4}\.?\s*\d+(?:\s*:\s*\d+(?:\s*,\s*\d+)*)?)*)*)\s*[*_**†\s]*",
     re.IGNORECASE
 )
 

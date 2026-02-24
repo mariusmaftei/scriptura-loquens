@@ -10,7 +10,8 @@
           "role": "narrator",
           "text": "GENEZA"
         }
-      ]
+      ],
+      "verse_num": null
     },
     {
       "chunk_type": "chapter_number",
@@ -22,48 +23,38 @@
           "role": "narrator",
           "text": "Capitolul 1"
         }
-      ]
+      ],
+      "verse_num": null
     },
     {
       "chunk_type": "chapter_name",
       "position": 3,
-      "references": null,
+      "references": "Gen. 1 - Gen. 11:9",
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Vremurile străvechi de la facerea lumii până la Avraam"
+          "text": "Vremurile străvechi de la facerea lumii până la Avraam*"
         }
-      ]
-    },
-    {
-      "chunk_type": "section_title",
-      "position": 4,
-      "references": null,
-      "segments": [
-        {
-          "character_name": null,
-          "role": "narrator",
-          "text": "Facerea lumii"
-        }
-      ]
+      ],
+      "verse_num": null
     },
     {
       "chunk_type": "verse",
-      "position": 5,
-      "references": null,
+      "position": 4,
+      "references": "Ioan 1:1, 2; Evr. 1:10. **Ps. 8:3; Ps. 33:6; Ps. 89:11, 12; Ps. 102:25; Ps. 136:5; Ps. 146:6; Isa. 44:24; Ier. 10:12; Ier. 51:15; Zah. 12:1; Fap. 14:15;",
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "La început, Dumnezeu a făcut cerurile şi pământul."
+          "text": "La început*, Dumnezeu a făcut** cerurile şi pământul."
         }
       ],
       "verse_num": "1"
     },
     {
       "chunk_type": "section_title",
-      "position": 6,
+      "position": 5,
       "references": null,
       "segments": [
         {
@@ -71,35 +62,36 @@
           "role": "narrator",
           "text": "Lumina"
         }
-      ]
+      ],
+      "verse_num": null
     },
     {
       "chunk_type": "verse",
-      "position": 7,
+      "position": 6,
       "references": null,
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Pământul era pustiu şi gol; peste faţa adâncului de ape era întuneric, şi Duhul lui Dumnezeu Se mişca pe"
+          "text": "Pământul era pustiu şi gol; peste faţa adâncului de ape era întuneric, şi* Duhul lui Dumnezeu Se mişca pe"
         }
       ],
       "verse_num": "2"
     },
     {
       "chunk_type": "verse",
-      "position": 8,
-      "references": null,
+      "position": 7,
+      "references": "Ps. 33:9. **2Cor. 4:6",
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "deasupra apelor. Dumnezeu a zis:"
+          "text": "Dumnezeu* a zis:"
         },
         {
           "character_name": "Dumnezeu",
           "role": "character",
-          "text": "„Să fie lumină!”"
+          "text": "Să fie** lumină!"
         },
         {
           "character_name": null,
@@ -111,7 +103,7 @@
     },
     {
       "chunk_type": "verse",
-      "position": 9,
+      "position": 8,
       "references": null,
       "segments": [
         {
@@ -124,20 +116,20 @@
     },
     {
       "chunk_type": "verse",
-      "position": 10,
+      "position": 9,
       "references": null,
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Dumnezeu a numit lumina zi , iar întunericul l-a numit noapte. Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua întâi."
+          "text": "Dumnezeu a numit lumina zi*, iar întunericul l-a numit noapte. Astfel, a fost o seară, şi apoi a fost o"
         }
       ],
       "verse_num": "5"
     },
     {
       "chunk_type": "section_title",
-      "position": 11,
+      "position": 10,
       "references": null,
       "segments": [
         {
@@ -145,7 +137,26 @@
           "role": "narrator",
           "text": "Cerul"
         }
-      ]
+      ],
+      "verse_num": null
+    },
+    {
+      "chunk_type": "verse",
+      "position": 11,
+      "references": "Iov 37:18; Ps. 136:5; Ier. 10:12; Ier. 51:15",
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Dumnezeu a zis:"
+        },
+        {
+          "character_name": "Dumnezeu",
+          "role": "character",
+          "text": "Să fie* o întindere între ape, şi ea să despartă apele de ape."
+        }
+      ],
+      "verse_num": "6"
     },
     {
       "chunk_type": "verse",
@@ -155,15 +166,10 @@
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Dumnezeu a zis:"
-        },
-        {
-          "character_name": "Dumnezeu",
-          "role": "character",
-          "text": "„Să fie o întindere între ape, şi ea să despartă apele de ape.”"
+          "text": "Şi Dumnezeu a făcut întinderea, şi ea a despărţit* apele care sunt dedesubtul întinderii de apele care sunt"
         }
       ],
-      "verse_num": "6"
+      "verse_num": "7"
     },
     {
       "chunk_type": "verse",
@@ -173,10 +179,10 @@
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Şi Dumnezeu a făcut întinderea, şi ea a despărţit apele care sunt dedesubtul întinderii de apele care sunt deasupra întinderii."
+          "text": "Dumnezeu a numit întinderea cer. Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a doua."
         }
       ],
-      "verse_num": "7"
+      "verse_num": "8"
     },
     {
       "chunk_type": "verse",
@@ -186,26 +192,14 @@
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Şi aşa a fost. Dumnezeu a numit întinderea cer. Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a doua."
-        }
-      ],
-      "verse_num": "8"
-    },
-    {
-      "chunk_type": "section_title",
-      "position": 15,
-      "references": null,
-      "segments": [
-        {
-          "character_name": null,
-          "role": "narrator",
           "text": "Pământul"
         }
-      ]
+      ],
+      "verse_num": "9"
     },
     {
       "chunk_type": "verse",
-      "position": 16,
+      "position": 15,
       "references": null,
       "segments": [
         {
@@ -216,7 +210,7 @@
         {
           "character_name": "Dumnezeu",
           "role": "character",
-          "text": "„Să se strângă la un loc apele care sunt dedesubtul cerului şi să se arate uscatul!”"
+          "text": "Să* se strângă la un loc apele care sunt dedesubtul cerului şi să se arate uscatul!"
         },
         {
           "character_name": null,
@@ -228,7 +222,7 @@
     },
     {
       "chunk_type": "verse",
-      "position": 17,
+      "position": 16,
       "references": null,
       "segments": [
         {
@@ -241,13 +235,31 @@
     },
     {
       "chunk_type": "verse",
+      "position": 17,
+      "references": null,
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "era bun."
+        }
+      ],
+      "verse_num": "11"
+    },
+    {
+      "chunk_type": "verse",
       "position": 18,
       "references": null,
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "era bun. Apoi Dumnezeu a zis: „Să dea pământul verdeaţă, iarbă cu sămânţă, pomi roditori , care să facă rod după"
+          "text": "Apoi Dumnezeu a zis:"
+        },
+        {
+          "character_name": "Apoi Dumnezeu",
+          "role": "character",
+          "text": "Să dea* pământul verdeaţă, iarbă cu sămânţă, pomi roditori**, care să facă rod după"
         }
       ],
       "verse_num": "11"
@@ -260,7 +272,7 @@
         {
           "character_name": null,
           "role": "narrator",
-          "text": "soiul lor şi care să aibă în ei sămânţa lor pe pământ.” Şi aşa a fost. Pământul a dat verdeaţă, iarbă cu sămânţă după soiul ei şi pomi care fac rod şi care îşi au sămânţa în ei, după"
+          "text": "Pământul a dat verdeaţă, iarbă cu sămânţă după soiul ei şi pomi care fac rod şi care îşi au sămânţa în ei, după"
         }
       ],
       "verse_num": "12"
@@ -273,14 +285,27 @@
         {
           "character_name": null,
           "role": "narrator",
-          "text": "soiul lor. Dumnezeu a văzut că lucrul acesta era bun. Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a treia."
+          "text": "soiul lor. Dumnezeu a văzut că lucrul acesta era bun."
+        }
+      ],
+      "verse_num": "13"
+    },
+    {
+      "chunk_type": "verse",
+      "position": 21,
+      "references": null,
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a treia."
         }
       ],
       "verse_num": "13"
     },
     {
       "chunk_type": "section_title",
-      "position": 21,
+      "position": 22,
       "references": null,
       "segments": [
         {
@@ -288,30 +313,23 @@
           "role": "narrator",
           "text": "Soarele, luna şi stelele"
         }
-      ]
+      ],
+      "verse_num": null
     },
     {
       "chunk_type": "verse",
-      "position": 22,
-      "references": null,
-      "segments": [
-        {
-          "character_name": null,
-          "role": "narrator",
-          "text": "Dumnezeu a zis: „Să fie nişte luminători în întinderea cerului, ca să despartă ziua de noapte; ei să fie nişte"
-        }
-      ],
-      "verse_num": "14"
-    },
-    {
-      "chunk_type": "chapter_name",
       "position": 23,
       "references": null,
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "semne care să arate vremurile, zilele şi anii; şi să slujească de luminători în întinderea cerului, ca să lumineze pământul.” Şi aşa a fost."
+          "text": "Dumnezeu a zis:"
+        },
+        {
+          "character_name": "Dumnezeu",
+          "role": "character",
+          "text": "Să fie nişte luminători* în întinderea cerului, ca să despartă ziua de noapte; ei să fie nişte"
         }
       ],
       "verse_num": "14"
@@ -324,7 +342,7 @@
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Dumnezeu a făcut cei doi mari luminători, şi anume: luminătorul cel mai mare ca să stăpânească ziua, şi"
+          "text": "şi să slujească de luminători în întinderea cerului, ca să lumineze pământul.” Şi aşa a fost."
         }
       ],
       "verse_num": "15"
@@ -337,7 +355,7 @@
         {
           "character_name": null,
           "role": "narrator",
-          "text": "luminătorul cel mai mic ca să stăpânească noaptea; a făcut şi stelele. Dumnezeu i-a aşezat în întinderea cerului ca să lumineze pământul,"
+          "text": "Dumnezeu* a făcut cei doi mari luminători, şi anume: luminătorul cel mai mare ca să stăpânească ziua, şi**"
         }
       ],
       "verse_num": "16"
@@ -350,13 +368,615 @@
         {
           "character_name": null,
           "role": "narrator",
-          "text": "să stăpânească ziua şi noaptea şi să despartă lumina de întuneric. Dumnezeu a văzut că lucrul acesta era bun."
+          "text": "Dumnezeu i-a aşezat în întinderea cerului ca să lumineze pământul,"
         }
       ],
       "verse_num": "17"
+    },
+    {
+      "chunk_type": "verse",
+      "position": 27,
+      "references": "Ier. 31:35",
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "să stăpânească* ziua şi noaptea şi să despartă lumina de întuneric. Dumnezeu a văzut că lucrul acesta era bun."
+        }
+      ],
+      "verse_num": "18"
     }
   ],
   "filename": "Biblia-in-limba-romana-Dumitru Cornilescu-page 5.pdf",
+  "format_lines": [
+    {
+      "alignment": "left",
+      "font_size": 17,
+      "text": "GENEZA"
+    },
+    {
+      "alignment": "left",
+      "font_size": 13,
+      "text": "Capitolul 1"
+    },
+    {
+      "alignment": "left",
+      "font_size": 13,
+      "text": "Vremurile străvechi de la facerea lumii până la Avraam*"
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Gen. 1 - Gen. 11:9"
+    },
+    {
+      "alignment": "left",
+      "font_size": 13,
+      "text": "Facerea lumii"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "1. La început*, Dumnezeu a făcut** cerurile şi pământul."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Ioan 1:1, 2; Evr. 1:10. **Ps. 8:3; Ps. 33:6; Ps. 89:11, 12; Ps. 102:25; Ps. 136:5; Ps. 146:6; Isa. 44:24; Ier. 10:12; Ier. 51:15; Zah. 12:1; Fap. 14:15;"
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "Fap. 17:24; Col. 1:16, 17; Evr. 11:3; Apoc. 4:11; Apoc. 10:6"
+    },
+    {
+      "alignment": "left",
+      "font_size": 13,
+      "text": "Lumina"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "2. Pământul era pustiu şi gol; peste faţa adâncului de ape era întuneric, şi* Duhul lui Dumnezeu Se mişca pe"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "deasupra apelor."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Ps. 33:6; Isa. 40:13, 14"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "3. Dumnezeu* a zis: „Să fie** lumină!” Şi a fost lumină."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Ps. 33:9. **2Cor. 4:6"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "4. Dumnezeu a văzut că lumina era bună; şi Dumnezeu a despărţit lumina de întuneric."
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "5. Dumnezeu a numit lumina zi*, iar întunericul l-a numit noapte. Astfel, a fost o seară, şi apoi a fost o"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "dimineaţă: aceasta a fost ziua întâi."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Ps. 74:16; Ps. 104:20"
+    },
+    {
+      "alignment": "left",
+      "font_size": 13,
+      "text": "Cerul"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "6. Dumnezeu a zis: „Să fie* o întindere între ape, şi ea să despartă apele de ape.”"
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Iov 37:18; Ps. 136:5; Ier. 10:12; Ier. 51:15"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "7. Şi Dumnezeu a făcut întinderea, şi ea a despărţit* apele care sunt dedesubtul întinderii de apele care sunt"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "deasupra** întinderii. Şi aşa a fost."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Prov. 8:28. **Ps. 148:4"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "8. Dumnezeu a numit întinderea cer. Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a doua."
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "Pământul"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "9. Dumnezeu a zis: „Să* se strângă la un loc apele care sunt dedesubtul cerului şi să se arate uscatul!” Şi aşa a"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "fost."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Iov 26:10; Iov 38:8; Ps. 33:7; Ps. 95:5; Ps. 104:9; Ps. 136:6; Prov. 8:29; Ier. 5:22; 2Pet. 3:5"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "10. Dumnezeu a numit uscatul pământ, iar grămada de ape a numit-o mări. Dumnezeu a văzut că lucrul acesta"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "era bun."
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "11. Apoi Dumnezeu a zis: „Să dea* pământul verdeaţă, iarbă cu sămânţă, pomi roditori**, care să facă rod după"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "soiul lor şi care să aibă în ei sămânţa lor pe pământ.” Şi aşa a fost."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Evr. 6:7. **Luc. 6:44"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "12. Pământul a dat verdeaţă, iarbă cu sămânţă după soiul ei şi pomi care fac rod şi care îşi au sămânţa în ei, după"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "soiul lor. Dumnezeu a văzut că lucrul acesta era bun."
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "13. Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a treia."
+    },
+    {
+      "alignment": "left",
+      "font_size": 13,
+      "text": "Soarele, luna şi stelele"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "14. Dumnezeu a zis: „Să fie nişte luminători* în întinderea cerului, ca să despartă ziua de noapte; ei să fie nişte"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "semne** care să arate vremurile, zilele şi anii;"
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Deut. 4:19; Ps. 74:16; Ps. 136:7. **Ps. 74:17; Ps. 104:19"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "15. şi să slujească de luminători în întinderea cerului, ca să lumineze pământul.” Şi aşa a fost."
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "16. Dumnezeu* a făcut cei doi mari luminători, şi anume: luminătorul cel mai mare ca să stăpânească ziua, şi**"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "luminătorul cel mai mic ca să stăpânească noaptea; a făcut şi† stelele."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Ps. 136:7, 8, 9; Ps. 148:3, 5. **Ps. 8:3. †Iov 38:7"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "17. Dumnezeu i-a aşezat în întinderea cerului ca să lumineze pământul,"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "18. să stăpânească* ziua şi noaptea şi să despartă lumina de întuneric. Dumnezeu a văzut că lucrul acesta era bun."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Ier. 31:35"
+    }
+  ],
   "language": "ro",
-  "language_name": "Romanian"
+  "language_name": "Romanian",
+  "pipeline": "bible",
+  "tts_preview": {
+    "chunk_count": 34,
+    "chunks": [
+      {
+        "character_count": 7,
+        "character_name": null,
+        "chunk_type": "book_title",
+        "position": 1,
+        "role": "narrator",
+        "text_for_tts": "GENEZA!",
+        "text_raw": "GENEZA",
+        "verse_num": null
+      },
+      {
+        "character_count": 12,
+        "character_name": null,
+        "chunk_type": "chapter_number",
+        "position": 2,
+        "role": "narrator",
+        "text_for_tts": "Capitolul 1!",
+        "text_raw": "Capitolul 1",
+        "verse_num": null
+      },
+      {
+        "character_count": 55,
+        "character_name": null,
+        "chunk_type": "chapter_name",
+        "position": 3,
+        "role": "narrator",
+        "text_for_tts": "Vremurile străvechi de la facerea lumii până la Avraam!",
+        "text_raw": "Vremurile străvechi de la facerea lumii până la Avraam*",
+        "verse_num": null
+      },
+      {
+        "character_count": 51,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 4,
+        "role": "narrator",
+        "text_for_tts": "La început , Dumnezeu a făcut cerurile şi pământul.",
+        "text_raw": "La început*, Dumnezeu a făcut** cerurile şi pământul.",
+        "verse_num": "1"
+      },
+      {
+        "character_count": 7,
+        "character_name": null,
+        "chunk_type": "section_title",
+        "position": 5,
+        "role": "narrator",
+        "text_for_tts": "Lumina!",
+        "text_raw": "Lumina",
+        "verse_num": null
+      },
+      {
+        "character_count": 104,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 6,
+        "role": "narrator",
+        "text_for_tts": "Pământul era pustiu şi gol; peste faţa adâncului de ape era întuneric, şi Duhul lui Dumnezeu Se mişca pe",
+        "text_raw": "Pământul era pustiu şi gol; peste faţa adâncului de ape era întuneric, şi* Duhul lui Dumnezeu Se mişca pe",
+        "verse_num": "2"
+      },
+      {
+        "character_count": 15,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 7,
+        "role": "narrator",
+        "text_for_tts": "Dumnezeu a zis:",
+        "text_raw": "Dumnezeu* a zis:",
+        "verse_num": "3"
+      },
+      {
+        "character_count": 14,
+        "character_name": "Dumnezeu",
+        "chunk_type": "verse",
+        "position": 8,
+        "role": "character",
+        "text_for_tts": "Să fie lumină!",
+        "text_raw": "Să fie** lumină!",
+        "verse_num": "3"
+      },
+      {
+        "character_count": 17,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 9,
+        "role": "narrator",
+        "text_for_tts": "Şi a fost lumină.",
+        "text_raw": "Şi a fost lumină.",
+        "verse_num": "3"
+      },
+      {
+        "character_count": 81,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 10,
+        "role": "narrator",
+        "text_for_tts": "Dumnezeu a văzut că lumina era bună; şi Dumnezeu a despărţit lumina de întuneric.",
+        "text_raw": "Dumnezeu a văzut că lumina era bună; şi Dumnezeu a despărţit lumina de întuneric.",
+        "verse_num": "4"
+      },
+      {
+        "character_count": 103,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 11,
+        "role": "narrator",
+        "text_for_tts": "Dumnezeu a numit lumina zi , iar întunericul l-a numit noapte. Astfel, a fost o seară, şi apoi a fost o",
+        "text_raw": "Dumnezeu a numit lumina zi*, iar întunericul l-a numit noapte. Astfel, a fost o seară, şi apoi a fost o",
+        "verse_num": "5"
+      },
+      {
+        "character_count": 6,
+        "character_name": null,
+        "chunk_type": "section_title",
+        "position": 12,
+        "role": "narrator",
+        "text_for_tts": "Cerul!",
+        "text_raw": "Cerul",
+        "verse_num": null
+      },
+      {
+        "character_count": 15,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 13,
+        "role": "narrator",
+        "text_for_tts": "Dumnezeu a zis:",
+        "text_raw": "Dumnezeu a zis:",
+        "verse_num": "6"
+      },
+      {
+        "character_count": 61,
+        "character_name": "Dumnezeu",
+        "chunk_type": "verse",
+        "position": 14,
+        "role": "character",
+        "text_for_tts": "Să fie o întindere între ape, şi ea să despartă apele de ape.",
+        "text_raw": "Să fie* o întindere între ape, şi ea să despartă apele de ape.",
+        "verse_num": "6"
+      },
+      {
+        "character_count": 106,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 15,
+        "role": "narrator",
+        "text_for_tts": "Şi Dumnezeu a făcut întinderea, şi ea a despărţit apele care sunt dedesubtul întinderii de apele care sunt",
+        "text_raw": "Şi Dumnezeu a făcut întinderea, şi ea a despărţit* apele care sunt dedesubtul întinderii de apele care sunt",
+        "verse_num": "7"
+      },
+      {
+        "character_count": 112,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 16,
+        "role": "narrator",
+        "text_for_tts": "Dumnezeu a numit întinderea cer. Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a doua.",
+        "text_raw": "Dumnezeu a numit întinderea cer. Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a doua.",
+        "verse_num": "8"
+      },
+      {
+        "character_count": 8,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 17,
+        "role": "narrator",
+        "text_for_tts": "Pământul",
+        "text_raw": "Pământul",
+        "verse_num": "9"
+      },
+      {
+        "character_count": 15,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 18,
+        "role": "narrator",
+        "text_for_tts": "Dumnezeu a zis:",
+        "text_raw": "Dumnezeu a zis:",
+        "verse_num": "9"
+      },
+      {
+        "character_count": 82,
+        "character_name": "Dumnezeu",
+        "chunk_type": "verse",
+        "position": 19,
+        "role": "character",
+        "text_for_tts": "Să se strângă la un loc apele care sunt dedesubtul cerului şi să se arate uscatul!",
+        "text_raw": "Să* se strângă la un loc apele care sunt dedesubtul cerului şi să se arate uscatul!",
+        "verse_num": "9"
+      },
+      {
+        "character_count": 8,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 20,
+        "role": "narrator",
+        "text_for_tts": "Şi aşa a",
+        "text_raw": "Şi aşa a",
+        "verse_num": "9"
+      },
+      {
+        "character_count": 101,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 21,
+        "role": "narrator",
+        "text_for_tts": "Dumnezeu a numit uscatul pământ, iar grămada de ape a numit-o mări. Dumnezeu a văzut că lucrul acesta",
+        "text_raw": "Dumnezeu a numit uscatul pământ, iar grămada de ape a numit-o mări. Dumnezeu a văzut că lucrul acesta",
+        "verse_num": "10"
+      },
+      {
+        "character_count": 8,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 22,
+        "role": "narrator",
+        "text_for_tts": "era bun.",
+        "text_raw": "era bun.",
+        "verse_num": "11"
+      },
+      {
+        "character_count": 20,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 23,
+        "role": "narrator",
+        "text_for_tts": "Apoi Dumnezeu a zis:",
+        "text_raw": "Apoi Dumnezeu a zis:",
+        "verse_num": "11"
+      },
+      {
+        "character_count": 81,
+        "character_name": "Apoi Dumnezeu",
+        "chunk_type": "verse",
+        "position": 24,
+        "role": "character",
+        "text_for_tts": "Să dea pământul verdeaţă, iarbă cu sămânţă, pomi roditori , care să facă rod după",
+        "text_raw": "Să dea* pământul verdeaţă, iarbă cu sămânţă, pomi roditori**, care să facă rod după",
+        "verse_num": "11"
+      },
+      {
+        "character_count": 111,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 25,
+        "role": "narrator",
+        "text_for_tts": "Pământul a dat verdeaţă, iarbă cu sămânţă după soiul ei şi pomi care fac rod şi care îşi au sămânţa în ei, după",
+        "text_raw": "Pământul a dat verdeaţă, iarbă cu sămânţă după soiul ei şi pomi care fac rod şi care îşi au sămânţa în ei, după",
+        "verse_num": "12"
+      },
+      {
+        "character_count": 53,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 26,
+        "role": "narrator",
+        "text_for_tts": "soiul lor. Dumnezeu a văzut că lucrul acesta era bun.",
+        "text_raw": "soiul lor. Dumnezeu a văzut că lucrul acesta era bun.",
+        "verse_num": "13"
+      },
+      {
+        "character_count": 80,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 27,
+        "role": "narrator",
+        "text_for_tts": "Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a treia.",
+        "text_raw": "Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a treia.",
+        "verse_num": "13"
+      },
+      {
+        "character_count": 25,
+        "character_name": null,
+        "chunk_type": "section_title",
+        "position": 28,
+        "role": "narrator",
+        "text_for_tts": "Soarele, luna şi stelele!",
+        "text_raw": "Soarele, luna şi stelele",
+        "verse_num": null
+      },
+      {
+        "character_count": 15,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 29,
+        "role": "narrator",
+        "text_for_tts": "Dumnezeu a zis:",
+        "text_raw": "Dumnezeu a zis:",
+        "verse_num": "14"
+      },
+      {
+        "character_count": 93,
+        "character_name": "Dumnezeu",
+        "chunk_type": "verse",
+        "position": 30,
+        "role": "character",
+        "text_for_tts": "Să fie nişte luminători în întinderea cerului, ca să despartă ziua de noapte; ei să fie nişte",
+        "text_raw": "Să fie nişte luminători* în întinderea cerului, ca să despartă ziua de noapte; ei să fie nişte",
+        "verse_num": "14"
+      },
+      {
+        "character_count": 93,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 31,
+        "role": "narrator",
+        "text_for_tts": "şi să slujească de luminători în întinderea cerului, ca să lumineze pământul.” Şi aşa a fost.",
+        "text_raw": "şi să slujească de luminători în întinderea cerului, ca să lumineze pământul.” Şi aşa a fost.",
+        "verse_num": "15"
+      },
+      {
+        "character_count": 103,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 32,
+        "role": "narrator",
+        "text_for_tts": "Dumnezeu a făcut cei doi mari luminători, şi anume: luminătorul cel mai mare ca să stăpânească ziua, şi",
+        "text_raw": "Dumnezeu* a făcut cei doi mari luminători, şi anume: luminătorul cel mai mare ca să stăpânească ziua, şi**",
+        "verse_num": "16"
+      },
+      {
+        "character_count": 66,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 33,
+        "role": "narrator",
+        "text_for_tts": "Dumnezeu i-a aşezat în întinderea cerului ca să lumineze pământul,",
+        "text_raw": "Dumnezeu i-a aşezat în întinderea cerului ca să lumineze pământul,",
+        "verse_num": "17"
+      },
+      {
+        "character_count": 109,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 34,
+        "role": "narrator",
+        "text_for_tts": "să stăpânească ziua şi noaptea şi să despartă lumina de întuneric. Dumnezeu a văzut că lucrul acesta era bun.",
+        "text_raw": "să stăpânească* ziua şi noaptea şi să despartă lumina de întuneric. Dumnezeu a văzut că lucrul acesta era bun.",
+        "verse_num": "18"
+      }
+    ],
+    "total_character_count": 1837
+  }
 }

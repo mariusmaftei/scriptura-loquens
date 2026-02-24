@@ -8,6 +8,7 @@ db = SQLAlchemy()
 def init_db():
     db.create_all()
     _migrate_chunk_type_column()
+    _migrate_pdf_use_ai()
     _migrate_chunk_verse_num()
     _migrate_pdf_ambient_column()
     _migrate_pdf_custom_voice_names()
@@ -94,6 +95,23 @@ def _migrate_pdf_custom_voice_names():
             current_app.logger.warning(f"Could not migrate pdfs custom voice names: {e}")
         else:
             print(f"Warning: Could not migrate pdfs custom voice names: {e}")
+
+
+def _migrate_pdf_use_ai():
+    """Add use_ai to pdfs table if it doesn't exist."""
+    try:
+        inspector = inspect(db.engine)
+        if inspector.has_table('pdfs'):
+            columns = [col['name'] for col in inspector.get_columns('pdfs')]
+            if 'use_ai' not in columns:
+                with db.engine.connect() as conn:
+                    conn.execute(text("ALTER TABLE pdfs ADD COLUMN use_ai BOOLEAN DEFAULT 0"))
+                    conn.commit()
+    except Exception as e:
+        if current_app:
+            current_app.logger.warning(f"Could not migrate pdfs use_ai: {e}")
+        else:
+            print(f"Warning: Could not migrate pdfs use_ai: {e}")
 
 
 def _migrate_add_indexes():
