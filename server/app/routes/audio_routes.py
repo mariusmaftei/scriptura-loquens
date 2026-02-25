@@ -6,6 +6,7 @@ from app.services.tts_service import (
     generate_voice_settings_hash, get_available_voices_for_language,
     language_code_from_voice_id, clone_elevenlabs_voice,
     prepare_text_for_tts, _voice_slug, _actor_slug, _pdf_ref_from_filename,
+    get_voice_name_for_id, normalize_character_name_for_voice,
 )
 from app.config import Config
 from app.utils.file_handler import ensure_directory_exists
@@ -31,7 +32,10 @@ def _get_current_audio_files_for_pdf(pdf_id):
     for a in all_audio:
         audio_by_chunk.setdefault(a.chunk_id, []).append(a)
     voice_settings = VoiceSetting.query.filter_by(pdf_id=pdf_id).all()
-    vs_lookup = {(vs.role, vs.character_name): vs for vs in voice_settings}
+    vs_lookup = {}
+    for vs in voice_settings:
+        key = (vs.role, normalize_character_name_for_voice(vs.character_name) or vs.character_name)
+        vs_lookup[key] = vs
     result = []
     for chunk in chunks:
         chunk_audios = audio_by_chunk.get(chunk.id) or []
@@ -39,7 +43,8 @@ def _get_current_audio_files_for_pdf(pdf_id):
         if custom:
             result.append(custom)
             continue
-        vs = vs_lookup.get((chunk.role, chunk.character_name))
+        key = (chunk.role, normalize_character_name_for_voice(chunk.character_name) or chunk.character_name)
+        vs = vs_lookup.get(key)
         if not vs:
             continue
         settings_hash = generate_voice_settings_hash({
@@ -147,42 +152,45 @@ def get_tts_preview(pdf_id):
 def get_voice_settings(pdf_id):
     pdf = PDF.query.get_or_404(pdf_id)
     settings = VoiceSetting.query.filter_by(pdf_id=pdf_id).all()
-    
     result = {}
     for setting in settings:
-        key = setting.character_name if setting.character_name else setting.role
-        result[key] = setting.to_dict()
-    
+        key = normalize_character_name_for_voice(setting.character_name) if setting.character_name else setting.role
+        if key not in result:
+            result[key] = setting.to_dict()
     return jsonify(result)
 
 @bp.route('/pdf/<int:pdf_id>/voice-settings', methods=['PUT'])
 def update_voice_settings(pdf_id):
     pdf = PDF.query.get_or_404(pdf_id)
     data = request.get_json()
-    
     try:
-        existing_settings = {(
-            s.role, s.character_name
-        ): s for s in VoiceSetting.query.filter_by(pdf_id=pdf_id).all()}
+        all_settings = VoiceSetting.query.filter_by(pdf_id=pdf_id).all()
+        existing_settings = {}
+        for s in all_settings:
+            key = (s.role, normalize_character_name_for_voice(s.character_name) if s.character_name else s.character_name)
+            existing_settings[key] = s
         for key, settings_data in data.items():
             parts = key.split('_', 1)
             role = parts[0]
             character_name = parts[1] if len(parts) > 1 else None
             if character_name == 'narrator':
                 character_name = None
-            existing = existing_settings.get((role, character_name))
-            
+            norm_name = normalize_character_name_for_voice(character_name) if character_name else None
+            lookup_key = (role, norm_name or character_name)
+            existing = existing_settings.get(lookup_key)
             if existing:
                 existing.voice_id = settings_data.get('voice_id', existing.voice_id)
                 existing.voice_name = settings_data.get('voice_name', existing.voice_name)
                 existing.speed = settings_data.get('speed', existing.speed)
                 existing.pitch = settings_data.get('pitch', existing.pitch)
                 existing.volume = settings_data.get('volume', existing.volume)
+                if character_name and existing.character_name != norm_name:
+                    existing.character_name = norm_name
             else:
                 new_setting = VoiceSetting(
                     pdf_id=pdf_id,
                     role=role,
-                    character_name=character_name,
+                    character_name=norm_name or character_name,
                     language_code=pdf.language or 'en',
                     voice_id=settings_data.get('voice_id'),
                     voice_name=settings_data.get('voice_name'),
@@ -191,16 +199,13 @@ def update_voice_settings(pdf_id):
                     volume=settings_data.get('volume', 1.0)
                 )
                 db.session.add(new_setting)
-                existing_settings[(role, character_name)] = new_setting
-        
+                existing_settings[lookup_key] = new_setting
         db.session.commit()
-        
-        settings = list(existing_settings.values())
         result = {}
-        for setting in settings:
-            key = setting.character_name if setting.character_name else setting.role
-            result[key] = setting.to_dict()
-        
+        for setting in VoiceSetting.query.filter_by(pdf_id=pdf_id).all():
+            k = normalize_character_name_for_voice(setting.character_name) if setting.character_name else setting.role
+            if k not in result:
+                result[k] = setting.to_dict()
         return jsonify(result), 200
     except Exception as e:
         db.session.rollback()
@@ -219,7 +224,10 @@ def regenerate_audio(pdf_id):
         language_code = pdf.language or 'en'
         chunk_ids = [c.id for c in chunks]
         vs_list = VoiceSetting.query.filter_by(pdf_id=pdf_id).all()
-        vs_lookup = {(vs.role, vs.character_name): vs for vs in vs_list}
+        vs_lookup = {}
+        for vs in vs_list:
+            key = (vs.role, normalize_character_name_for_voice(vs.character_name) or vs.character_name)
+            vs_lookup[key] = vs
         existing_audio_all = AudioFile.query.filter(
             AudioFile.chunk_id.in_(chunk_ids)
         ).all()
@@ -230,7 +238,7 @@ def regenerate_audio(pdf_id):
         }
 
         for chunk in chunks:
-            voice_setting = vs_lookup.get((chunk.role, chunk.character_name))
+            voice_setting = vs_lookup.get((chunk.role, normalize_character_name_for_voice(chunk.character_name) or chunk.character_name))
             if not voice_setting:
                 voice_id = get_voice_for_language(
                     language_code, chunk.role, character_name=chunk.character_name
@@ -238,16 +246,18 @@ def regenerate_audio(pdf_id):
                 voice_setting = VoiceSetting(
                     pdf_id=pdf_id,
                     role=chunk.role,
-                    character_name=chunk.character_name,
+                    character_name=normalize_character_name_for_voice(chunk.character_name) or chunk.character_name,
                     language_code=language_code,
                     voice_id=voice_id,
+                    voice_name=get_voice_name_for_id(voice_id, language_code),
                     speed=1.0,
                     pitch=0.0,
                     volume=1.0
                 )
                 db.session.add(voice_setting)
                 db.session.flush()
-                vs_lookup[(chunk.role, chunk.character_name)] = voice_setting
+                key = (voice_setting.role, normalize_character_name_for_voice(voice_setting.character_name) or voice_setting.character_name)
+                vs_lookup[key] = voice_setting
 
             settings_hash = generate_voice_settings_hash({
                 'voice_id': voice_setting.voice_id,
@@ -268,7 +278,8 @@ def regenerate_audio(pdf_id):
             )
 
             character_slug = _voice_slug(chunk.role, chunk.character_name)
-            actor_slug = _actor_slug(voice_setting.voice_id, voice_setting.voice_name)
+            actor_name = voice_setting.voice_name or get_voice_name_for_id(voice_setting.voice_id, language_code)
+            actor_slug = _actor_slug(voice_setting.voice_id, actor_name)
             audio_path = save_audio_file(
                 audio_content,
                 chunk.id,
@@ -398,11 +409,13 @@ def get_ambient_file(ambient_id):
 @bp.route('/audio/chunk/<int:chunk_id>', methods=['GET'])
 def get_audio_by_chunk(chunk_id):
     chunk = Chunk.query.get_or_404(chunk_id)
-    voice_setting = VoiceSetting.query.filter_by(
-        pdf_id=chunk.pdf_id,
-        role=chunk.role,
-        character_name=chunk.character_name
-    ).first()
+    norm_name = normalize_character_name_for_voice(chunk.character_name) if chunk.character_name else None
+    voice_setting = None
+    for vs in VoiceSetting.query.filter_by(pdf_id=chunk.pdf_id, role=chunk.role).all():
+        vs_norm = normalize_character_name_for_voice(vs.character_name) if vs.character_name else None
+        if vs_norm == norm_name:
+            voice_setting = vs
+            break
     if not voice_setting:
         return jsonify({'error': 'No voice setting for this chunk'}), 404
     settings_hash = generate_voice_settings_hash({

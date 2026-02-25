@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import UploadPage from "./pages/UploadPage";
 import ScripturePage from "./pages/ScripturePage";
 import ProcessedDocumentsPage from "./pages/ProcessedDocumentsPage";
+import BookDetailPage from "./pages/BookDetailPage";
 import EditAudioPage from "./pages/EditAudioPage";
 import EditAudioStudioPage from "./pages/EditAudioStudioPage";
 import AnalyzeJsonPage from "./pages/AnalyzeJsonPage";
@@ -21,6 +22,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/import" element={<UploadPage />} />
             <Route path="/biblioteca" element={<ProcessedDocumentsPage />} />
+            <Route path="/biblioteca/book/:bookSlug" element={<BookDetailPage />} />
             <Route path="/post-productie" element={<EditAudioPage />} />
             <Route path="/post-productie/:pdfId" element={<EditAudioPage />} />
             <Route path="/post-productie/studio/:pdfId" element={<EditAudioStudioPage />} />

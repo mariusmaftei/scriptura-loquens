@@ -76,6 +76,45 @@
   margin: 0 0 1rem 0;
 }
 
+.saveNamesRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.saveNamesBtn {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #fff;
+  background: var(--color-primary, #5a1a1a);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.saveNamesBtn:hover:not(:disabled) {
+  background: var(--color-primary-dark, #451414);
+}
+
+.saveNamesBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.namesSavedOk {
+  font-size: 0.875rem;
+  color: var(--color-success, #2d5a27);
+}
+
+.namesSaveErr {
+  font-size: 0.875rem;
+  color: var(--color-error, #b91c1c);
+}
+
 .filterRow {
   display: flex;
   align-items: center;

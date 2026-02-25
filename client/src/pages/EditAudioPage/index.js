@@ -2,7 +2,81 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { pdfAPI } from "../../services/api";
 import Container from "../../components/Container/Container";
+import Button from "../../components/Button/Button";
 import styles from "./EditAudioPage.module.css";
+
+const CustomVoiceNamesForm = ({ pdfId, pdf, onSaved }) => {
+  const [narratorName, setNarratorName] = useState("");
+  const [voiceActorName, setVoiceActorName] = useState("");
+  const [saving, setSaving] = useState(false);
+  const [message, setMessage] = useState(null);
+
+  useEffect(() => {
+    setNarratorName(pdf?.custom_narrator_name || "");
+    setVoiceActorName(pdf?.custom_voice_actor_name || "");
+  }, [pdf?.id, pdf?.custom_narrator_name, pdf?.custom_voice_actor_name]);
+
+  const handleSave = async () => {
+    if (!pdfId) return;
+    try {
+      setSaving(true);
+      setMessage(null);
+      await pdfAPI.updateCustomVoiceNames(pdfId, {
+        custom_narrator_name: narratorName.trim() || null,
+        custom_voice_actor_name: voiceActorName.trim() || null,
+      });
+      onSaved?.({
+        custom_narrator_name: narratorName.trim() || null,
+        custom_voice_actor_name: voiceActorName.trim() || null,
+      });
+      setMessage("Numele au fost salvate.");
+    } catch (err) {
+      setMessage(err.response?.data?.error || "Eroare la salvare");
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  return (
+    <div className={styles.customNamesForm}>
+      <label className={styles.customNameLabel}>
+        <span>Nume narator</span>
+        <input
+          type="text"
+          className={styles.customNameInput}
+          placeholder="ex. Ion Popescu"
+          value={narratorName}
+          onChange={(e) => setNarratorName(e.target.value)}
+        />
+      </label>
+      <label className={styles.customNameLabel}>
+        <span>Nume actor voce</span>
+        <input
+          type="text"
+          className={styles.customNameInput}
+          placeholder="ex. Maria Ionescu"
+          value={voiceActorName}
+          onChange={(e) => setVoiceActorName(e.target.value)}
+        />
+      </label>
+      {message && (
+        <p className={message.includes("Eroare") ? styles.customNameError : styles.customNameSuccess}>
+          {message}
+        </p>
+      )}
+      <Button
+        type="button"
+        variant="primary"
+        size="sm"
+        onClick={handleSave}
+        disabled={saving}
+        loading={saving}
+      >
+        Salvează nume
+      </Button>
+    </div>
+  );
+};
 
 const EditAudioPage = () => {
   const { pdfId: paramPdfId } = useParams();
@@ -105,6 +179,38 @@ const EditAudioPage = () => {
 
             {selectedPdfId && (
               <div className={styles.cards}>
+                <section className={styles.card}>
+                  <div className={styles.cardIcon}>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                      <circle cx="12" cy="7" r="4" />
+                    </svg>
+                  </div>
+                  <h2 className={styles.cardTitle}>Nume custom pentru voce</h2>
+                  <p className={styles.cardDesc}>
+                    Numele naratorului și al actorului de voce pentru afișare la
+                    redare. Poți le poți edita oricând.
+                  </p>
+                  <CustomVoiceNamesForm
+                    pdfId={selectedPdfId}
+                    pdf={selectedPdf}
+                    onSaved={(updated) => {
+                      setProcessedPDFs((prev) =>
+                        prev.map((p) =>
+                          p.id === selectedPdfId ? { ...p, ...updated } : p
+                        )
+                      );
+                    }}
+                  />
+                </section>
+
                 <section className={styles.card}>
                   <div className={styles.cardIcon}>
                     <svg

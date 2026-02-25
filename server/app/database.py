@@ -12,6 +12,8 @@ def init_db():
     _migrate_chunk_verse_num()
     _migrate_pdf_ambient_column()
     _migrate_pdf_custom_voice_names()
+    _migrate_pdf_book_columns()
+    _migrate_pdf_book_cover()
     _migrate_add_indexes()
 
 def _migrate_chunk_type_column():
@@ -95,6 +97,49 @@ def _migrate_pdf_custom_voice_names():
             current_app.logger.warning(f"Could not migrate pdfs custom voice names: {e}")
         else:
             print(f"Warning: Could not migrate pdfs custom voice names: {e}")
+
+
+def _migrate_pdf_book_columns():
+    """Add book_key, book_display_name, book_author, book_genre to pdfs if missing."""
+    try:
+        inspector = inspect(db.engine)
+        if inspector.has_table('pdfs'):
+            columns = [col['name'] for col in inspector.get_columns('pdfs')]
+            with db.engine.connect() as conn:
+                if 'book_key' not in columns:
+                    conn.execute(text("ALTER TABLE pdfs ADD COLUMN book_key VARCHAR(120)"))
+                    conn.commit()
+                if 'book_display_name' not in columns:
+                    conn.execute(text("ALTER TABLE pdfs ADD COLUMN book_display_name VARCHAR(255)"))
+                    conn.commit()
+                if 'book_author' not in columns:
+                    conn.execute(text("ALTER TABLE pdfs ADD COLUMN book_author VARCHAR(255)"))
+                    conn.commit()
+                if 'book_genre' not in columns:
+                    conn.execute(text("ALTER TABLE pdfs ADD COLUMN book_genre VARCHAR(80)"))
+                    conn.commit()
+    except Exception as e:
+        if current_app:
+            current_app.logger.warning(f"Could not migrate pdfs book columns: {e}")
+        else:
+            print(f"Warning: Could not migrate pdfs book columns: {e}")
+
+
+def _migrate_pdf_book_cover():
+    """Add book_cover_path to pdfs if missing."""
+    try:
+        inspector = inspect(db.engine)
+        if inspector.has_table('pdfs'):
+            columns = [col['name'] for col in inspector.get_columns('pdfs')]
+            if 'book_cover_path' not in columns:
+                with db.engine.connect() as conn:
+                    conn.execute(text("ALTER TABLE pdfs ADD COLUMN book_cover_path VARCHAR(500)"))
+                    conn.commit()
+    except Exception as e:
+        if current_app:
+            current_app.logger.warning(f"Could not migrate pdfs book_cover_path: {e}")
+        else:
+            print(f"Warning: Could not migrate pdfs book_cover_path: {e}")
 
 
 def _migrate_pdf_use_ai():

@@ -5,6 +5,32 @@ RO_OPEN = "\u201e"
 RO_CLOSE = "\u201d"
 SPEAKER_RE = re.compile(r"^(.+?)\s+a\s+zis\s*:\s*$", re.IGNORECASE)
 
+SPEAKER_PREFIXES = (
+    "apoi", "și", "si", "iar", "dar", "atunci", "acolo", "aici", "însă", "insa",
+    "deci", "dar", "totuși", "totusi", "prin", "după", "dupa",
+)
+KNOWN_CHARACTERS = frozenset({"dumnezeu", "domnul", "god", "lord", "yahweh", "elohim"})
+
+
+def _normalize_speaker(raw: str) -> str:
+    if not raw or not raw.strip():
+        return raw or ""
+    s = raw.strip().rstrip("*†").strip()
+    s_lower = s.lower()
+    if s_lower in KNOWN_CHARACTERS:
+        return s
+    for prefix in SPEAKER_PREFIXES:
+        if s_lower.startswith(prefix):
+            rest = s[len(prefix):].strip()
+            if rest:
+                return _normalize_speaker(rest)
+            break
+    if " " in s:
+        for part in s.split():
+            if part.lower() in KNOWN_CHARACTERS:
+                return part
+    return s
+
 
 def segment_verse_text(text: str, default_speaker: Optional[str] = None) -> list[dict]:
     if not text or not text.strip():
@@ -38,7 +64,7 @@ def segment_verse_text(text: str, default_speaker: Optional[str] = None) -> list
                 if r == "narrator":
                     m = SPEAKER_RE.match(p)
                     if m:
-                        speaker = m.group(1).strip()
+                        speaker = _normalize_speaker(m.group(1).strip())
                         break
         out.append({
             "role": role,

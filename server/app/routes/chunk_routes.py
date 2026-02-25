@@ -2,7 +2,7 @@ from flask import Blueprint, request, jsonify
 from app.database import db
 from app.models import PDF, Chunk, ExtractedText, VoiceSetting
 from app.services.gemini_service import analyze_text_in_batches
-from app.services.pdf_service import detect_pdf_language
+from app.services.tts_service import normalize_character_name_for_voice
 import json
 
 bp = Blueprint('chunks', __name__)
@@ -17,23 +17,21 @@ def get_chunks(pdf_id):
 def get_characters(pdf_id):
     pdf = PDF.query.get_or_404(pdf_id)
     chunks = Chunk.query.filter_by(pdf_id=pdf_id).all()
-    
     characters = []
     seen = set()
-    
     for chunk in chunks:
         if chunk.role == 'narrator':
             key = 'narrator'
+            display_name = None
         else:
-            key = f"{chunk.role}_{chunk.character_name or 'unknown'}"
-        
+            display_name = normalize_character_name_for_voice(chunk.character_name) or chunk.character_name
+            key = f"{chunk.role}_{display_name or 'unknown'}"
         if key not in seen:
             seen.add(key)
             characters.append({
                 'role': chunk.role,
-                'character_name': chunk.character_name
+                'character_name': display_name if chunk.role != 'narrator' else chunk.character_name
             })
-    
     return jsonify(characters)
 
 @bp.route('/pdf/<int:pdf_id>/analyze', methods=['POST'])

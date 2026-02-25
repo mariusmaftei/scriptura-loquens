@@ -1,7 +1,8 @@
 import React, { useState, useCallback, useRef, useMemo } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { useApp } from "../../context/AppContext";
-import { getAmbientFileUrl } from "../../services/api";
+import { getAmbientFileUrl, pdfAPI } from "../../services/api";
+import { getBookKeyForPDF } from "../../utils/bookMeta";
 import ChunkViewer from "../../components/ChunkViewer/ChunkViewer";
 import VoiceCustomizer from "../../components/VoiceCustomizer/VoiceCustomizer";
 import SequentialAudioPlayer from "../../components/SequentialAudioPlayer/SequentialAudioPlayer";
@@ -16,7 +17,11 @@ const getCharacterLabel = (role, characterName) =>
 
 const getVoiceSettingsKey = (role, characterName) => characterName || role;
 
+const AUTO_NEXT_PAGE_KEY = "scriptura_autoNextPage";
+
 const ResultPage = ({ pdfId }) => {
+  const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
   const {
     currentPDF,
     chunks,
@@ -70,7 +75,48 @@ const ResultPage = ({ pdfId }) => {
   const [playSingleSegment, setPlaySingleSegment] = useState(false);
   const [playerSettingsPanel, setPlayerSettingsPanel] = useState(null);
   const [showVoiceCloner, setShowVoiceCloner] = useState(false);
+  const [autoNextPage, setAutoNextPage] = useState(() => {
+    try {
+      return localStorage.getItem(AUTO_NEXT_PAGE_KEY) === "1";
+    } catch {
+      return false;
+    }
+  });
   const transcriptionScrollRef = useRef(null);
+  const initialAutoPlay = searchParams.get("autoplay") === "1";
+
+  const handleAutoNextChange = useCallback((e) => {
+    const checked = e.target.checked;
+    setAutoNextPage(checked);
+    try {
+      localStorage.setItem(AUTO_NEXT_PAGE_KEY, checked ? "1" : "0");
+    } catch {}
+  }, []);
+
+  const handleAllChunksEnded = useCallback(async () => {
+    if (!autoNextPage || !currentPDF?.book_key) return;
+    try {
+      const pdfs = await pdfAPI.listPDFs();
+      const bookPdfs = pdfs
+        .filter((p) => getBookKeyForPDF(p) === currentPDF.book_key)
+        .sort((a, b) => new Date(a.upload_date || 0) - new Date(b.upload_date || 0));
+      const idx = bookPdfs.findIndex((p) => p.id === currentPDF.id);
+      if (idx < 0 || idx >= bookPdfs.length - 1) return;
+      const nextPdf = bookPdfs[idx + 1];
+      if (nextPdf?.status !== "completed") return;
+      navigate(`/documents/${nextPdf.id}?autoplay=1`, { replace: false });
+    } catch (err) {
+      console.error("Auto-next page failed:", err);
+    }
+  }, [autoNextPage, currentPDF, navigate]);
+
+  const handleAutoPlayStarted = useCallback(() => {
+    setSearchParams((prev) => {
+      const next = new URLSearchParams(prev);
+      next.delete("autoplay");
+      return next.toString() ? next : [];
+    }, { replace: true });
+  }, [setSearchParams]);
 
   const handleVoiceSave = async (settings) => {
     if (!pdfId) return;
@@ -243,6 +289,9 @@ const ResultPage = ({ pdfId }) => {
                 onChunkChange={handleChunkChange}
                 onPlayingChange={handlePlayingChange}
                 onPlayButtonClick={() => setPlaySingleSegment(false)}
+                onAllChunksEnded={handleAllChunksEnded}
+                initialAutoPlay={initialAutoPlay}
+                onAutoPlayStarted={handleAutoPlayStarted}
                 ambientTrackUrl={
                   currentPDF?.selected_ambient_track_id
                     ? getAmbientFileUrl(currentPDF.selected_ambient_track_id)
@@ -251,6 +300,18 @@ const ResultPage = ({ pdfId }) => {
                 customNarratorName={currentPDF?.custom_narrator_name}
                 customVoiceActorName={currentPDF?.custom_voice_actor_name}
               />
+              {currentPDF?.book_key && (
+                <label className={styles.autoNextLabel}>
+                  <input
+                    type="checkbox"
+                    checked={autoNextPage}
+                    onChange={handleAutoNextChange}
+                    className={styles.autoNextCheckbox}
+                    aria-label="Pornește automat următoarea pagină"
+                  />
+                  <span>Pornește automat următoarea pagină</span>
+                </label>
+              )}
               <div className={styles.playerSettingsButtons}>
                 <button
                   type="button"

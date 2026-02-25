@@ -41,6 +41,11 @@ class PDF(db.Model):
     custom_voice_actor_name = db.Column(db.String(255), nullable=True)
     use_ai = db.Column(db.Boolean, default=False, nullable=False)
     pipeline = db.Column(db.String(20), default='bible', nullable=False)
+    book_key = db.Column(db.String(120), nullable=True)
+    book_display_name = db.Column(db.String(255), nullable=True)
+    book_author = db.Column(db.String(255), nullable=True)
+    book_genre = db.Column(db.String(80), nullable=True)
+    book_cover_path = db.Column(db.String(500), nullable=True)
 
     extracted_texts = db.relationship('ExtractedText', backref='pdf', cascade='all, delete-orphan')
     chunks = db.relationship('Chunk', backref='pdf', cascade='all, delete-orphan')
@@ -64,6 +69,11 @@ class PDF(db.Model):
             'custom_voice_actor_name': self.custom_voice_actor_name,
             'use_ai': self.use_ai,
             'pipeline': getattr(self, 'pipeline', 'bible') or 'bible',
+            'book_key': getattr(self, 'book_key', None),
+            'book_display_name': getattr(self, 'book_display_name', None),
+            'book_author': getattr(self, 'book_author', None),
+            'book_genre': getattr(self, 'book_genre', None),
+            'book_cover_path': getattr(self, 'book_cover_path', None),
         }
 
 class ExtractedText(db.Model):

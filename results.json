@@ -1,40 +1,40 @@
 {
   "chunks": [
     {
-      "chunk_type": "book_title",
+      "chunk_type": "verse",
       "position": 1,
       "references": null,
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "GENEZA"
+          "text": "Ci un abur se ridica de pe pământ şi uda toată faţa pământului."
         }
       ],
-      "verse_num": null
+      "verse_num": "6"
     },
     {
-      "chunk_type": "chapter_number",
+      "chunk_type": "verse",
       "position": 2,
+      "references": "Gen. 3:19, 23; Ps. 103:14; Ecl. 12:7; Isa. 64:8; 1Cor. 15:47. **Iov 33:4; Fap. 17:25. †Gen. 7:22; Isa. 2:22. ††1Cor. 15:45",
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Domnul Dumnezeu a făcut pe om din ţărâna* pământului, i-a** suflat în nări† suflare de viaţă, şi omul s-a făcut†† astfel un suflet viu."
+        }
+      ],
+      "verse_num": "7"
+    },
+    {
+      "chunk_type": "section_title",
+      "position": 3,
       "references": null,
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Capitolul 1"
-        }
-      ],
-      "verse_num": null
-    },
-    {
-      "chunk_type": "chapter_name",
-      "position": 3,
-      "references": "Gen. 1 - Gen. 11:9",
-      "segments": [
-        {
-          "character_name": null,
-          "role": "narrator",
-          "text": "Vremurile străvechi de la facerea lumii până la Avraam*"
+          "text": "Raiul"
         }
       ],
       "verse_num": null
@@ -42,28 +42,28 @@
     {
       "chunk_type": "verse",
       "position": 4,
-      "references": "Ioan 1:1, 2; Evr. 1:10. **Ps. 8:3; Ps. 33:6; Ps. 89:11, 12; Ps. 102:25; Ps. 136:5; Ps. 146:6; Isa. 44:24; Ier. 10:12; Ier. 51:15; Zah. 12:1; Fap. 14:15;",
+      "references": "Gen. 13:10; Isa. 51:3; Ezec. 28:13; Ioel 2:3. **Gen. 3:24. †Gen. 4:16; 2Împ. 19:12; Ezec. 27:23. ††Gen. 2:15",
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "La început*, Dumnezeu a făcut** cerurile şi pământul."
+          "text": "Apoi Domnul Dumnezeu a sădit o grădină* în Eden**, spre răsărit†; şi a pus†† acolo pe omul pe care-l întocmise."
         }
       ],
-      "verse_num": "1"
+      "verse_num": "8"
     },
     {
-      "chunk_type": "section_title",
+      "chunk_type": "verse",
       "position": 5,
-      "references": null,
+      "references": "Ezec. 31:8. **Gen. 3:22; Prov. 3:18; Prov. 11:30; Apoc. 2:7; Apoc. 22:2, 14. †Gen. 2:17",
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Lumina"
+          "text": "Domnul Dumnezeu a făcut să răsară din pământ tot felul* de pomi, plăcuţi la vedere şi buni la mâncare, şi pomul** vieţii în mijlocul grădinii, şi pomul† cunoştinţei binelui şi răului."
         }
       ],
-      "verse_num": null
+      "verse_num": "9"
     },
     {
       "chunk_type": "verse",
@@ -73,46 +73,36 @@
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Pământul era pustiu şi gol; peste faţa adâncului de ape era întuneric, şi* Duhul lui Dumnezeu Se mişca pe"
+          "text": "Un râu ieşea din Eden şi uda grădina; şi de acolo se împărţea şi se făcea patru braţe."
         }
       ],
-      "verse_num": "2"
+      "verse_num": "10"
     },
     {
       "chunk_type": "verse",
       "position": 7,
-      "references": "Ps. 33:9. **2Cor. 4:6",
+      "references": "Gen. 25:18",
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Dumnezeu* a zis:"
-        },
-        {
-          "character_name": "Dumnezeu",
-          "role": "character",
-          "text": "Să fie** lumină!"
-        },
-        {
-          "character_name": null,
-          "role": "narrator",
-          "text": "Şi a fost lumină."
+          "text": "Numele celui dintâi este Pison; el înconjoară toată* ţara Havila, unde se găseşte aur."
         }
       ],
-      "verse_num": "3"
+      "verse_num": "11"
     },
     {
       "chunk_type": "verse",
       "position": 8,
-      "references": null,
+      "references": "Num. 11:7",
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Dumnezeu a văzut că lumina era bună; şi Dumnezeu a despărţit lumina de întuneric."
+          "text": "Aurul din ţara aceasta este bun; acolo se găseşte şi bedelion* şi piatră de onix."
         }
       ],
-      "verse_num": "4"
+      "verse_num": "12"
     },
     {
       "chunk_type": "verse",
@@ -122,41 +112,36 @@
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Dumnezeu a numit lumina zi*, iar întunericul l-a numit noapte. Astfel, a fost o seară, şi apoi a fost o"
+          "text": "Numele râului al doilea este Ghihon; el înconjoară toată ţara Cuş."
         }
       ],
-      "verse_num": "5"
+      "verse_num": "13"
     },
     {
-      "chunk_type": "section_title",
+      "chunk_type": "verse",
       "position": 10,
-      "references": null,
+      "references": "Dan. 10:4",
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Cerul"
+          "text": "Numele celui de al treilea este* Hidechela: el curge la răsăritul Asiriei. Al patrulea râu este Eufratul. aAdică: Tigru"
         }
       ],
-      "verse_num": null
+      "verse_num": "14"
     },
     {
       "chunk_type": "verse",
       "position": 11,
-      "references": "Iov 37:18; Ps. 136:5; Ier. 10:12; Ier. 51:15",
+      "references": "Gen. 2:8",
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Dumnezeu a zis:"
-        },
-        {
-          "character_name": "Dumnezeu",
-          "role": "character",
-          "text": "Să fie* o întindere între ape, şi ea să despartă apele de ape."
+          "text": "Domnul Dumnezeu a luat pe om şi l-a aşezat* în grădina Edenului, ca s-o lucreze şi s-o păzească."
         }
       ],
-      "verse_num": "6"
+      "verse_num": "15"
     },
     {
       "chunk_type": "verse",
@@ -166,72 +151,72 @@
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Şi Dumnezeu a făcut întinderea, şi ea a despărţit* apele care sunt dedesubtul întinderii de apele care sunt"
+          "text": "Domnul Dumnezeu a dat omului porunca aceasta:"
+        },
+        {
+          "character_name": null,
+          "role": "character",
+          "text": "Poţi să mănânci după plăcere din orice pom din grădină;"
         }
       ],
-      "verse_num": "7"
+      "verse_num": "16"
     },
     {
       "chunk_type": "verse",
       "position": 13,
-      "references": null,
+      "references": "Gen. 2:9. **Gen. 3:1, 3, 11, 17. †Gen. 3:3, 19; Rom. 6:23; 1Cor. 15:56; Iac. 1:15; 1Ioan 5:16",
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Dumnezeu a numit întinderea cer. Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a doua."
+          "text": "dar* din pomul cunoştinţei binelui şi răului să** nu mănânci, căci în ziua în care vei mânca din el vei muri† negreşit.”"
         }
       ],
-      "verse_num": "8"
+      "verse_num": "17"
     },
     {
-      "chunk_type": "verse",
+      "chunk_type": "section_title",
       "position": 14,
       "references": null,
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Pământul"
+          "text": "Facerea femeii"
         }
       ],
-      "verse_num": "9"
+      "verse_num": null
     },
     {
       "chunk_type": "verse",
       "position": 15,
-      "references": null,
+      "references": "Gen. 3:12; 1Cor. 11:9; 1Tim. 2:13",
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Dumnezeu a zis:"
+          "text": "Domnul Dumnezeu a zis:"
         },
         {
-          "character_name": "Dumnezeu",
+          "character_name": "Domnul",
           "role": "character",
-          "text": "Să* se strângă la un loc apele care sunt dedesubtul cerului şi să se arate uscatul!"
-        },
-        {
-          "character_name": null,
-          "role": "narrator",
-          "text": "Şi aşa a"
+          "text": "Nu este bine ca omul să fie singur; am* să-i fac un ajutor potrivit pentru el."
         }
       ],
-      "verse_num": "9"
+      "verse_num": "18"
     },
     {
       "chunk_type": "verse",
       "position": 16,
-      "references": null,
+      "references": "Gen. 1:20, 24. **Ps. 8:6; Gen. 6:20",
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Dumnezeu a numit uscatul pământ, iar grămada de ape a numit-o mări. Dumnezeu a văzut că lucrul acesta"
+          "text": "Domnul Dumnezeu* a făcut din pământ toate fiarele câmpului şi toate păsările cerului; şi le-a adus** la om, ca să vadă cum are să le numească; şi orice nume pe care-l dădea omul fiecărei vieţuitoare, acela-i era numele."
         }
       ],
-      "verse_num": "10"
+      "verse_num": "19"
     },
     {
       "chunk_type": "verse",
@@ -241,67 +226,72 @@
         {
           "character_name": null,
           "role": "narrator",
-          "text": "era bun."
+          "text": "Şi omul a pus nume tuturor vitelor, păsărilor cerului şi tuturor fiarelor câmpului; dar pentru om nu s-a găsit niciun ajutor care să i se potrivească."
         }
       ],
-      "verse_num": "11"
+      "verse_num": "20"
     },
     {
       "chunk_type": "verse",
       "position": 18,
-      "references": null,
+      "references": "Gen. 15:12; 1Sam. 26:12",
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Apoi Dumnezeu a zis:"
-        },
-        {
-          "character_name": "Apoi Dumnezeu",
-          "role": "character",
-          "text": "Să dea* pământul verdeaţă, iarbă cu sămânţă, pomi roditori**, care să facă rod după"
+          "text": "Atunci Domnul Dumnezeu a trimis un somn* adânc peste om, şi omul a adormit; Domnul Dumnezeu a luat una din coastele lui şi a închis carnea la locul ei."
         }
       ],
-      "verse_num": "11"
+      "verse_num": "21"
     },
     {
       "chunk_type": "verse",
       "position": 19,
-      "references": null,
+      "references": "Prov. 18:22; Evr. 13:4",
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Pământul a dat verdeaţă, iarbă cu sămânţă după soiul ei şi pomi care fac rod şi care îşi au sămânţa în ei, după"
+          "text": "Din coasta pe care o luase din om, Domnul Dumnezeu a făcut o femeie şi a adus-o la* om."
         }
       ],
-      "verse_num": "12"
+      "verse_num": "22"
     },
     {
       "chunk_type": "verse",
       "position": 20,
-      "references": null,
+      "references": "Gen. 29:14; Jud. 9:2; 2Sam. 5:1; 2Sam. 19:13; Efes. 5:30. **1Cor. 11:8",
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "soiul lor. Dumnezeu a văzut că lucrul acesta era bun."
+          "text": "Şi omul a zis:"
+        },
+        {
+          "character_name": "Şi omul",
+          "role": "character",
+          "text": "Iată în sfârşit aceea care este os* din oasele mele şi carne din carnea mea! Ea se va numi „femeie"
+        },
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "a, pentru că a fost luată din** om.” aÎn ebraică işa vine de la un cuvânt care înseamnă bărbat iş"
         }
       ],
-      "verse_num": "13"
+      "verse_num": "23"
     },
     {
       "chunk_type": "verse",
       "position": 21,
-      "references": null,
+      "references": "Gen. 31:15; Ps. 45:10; Mat. 19:5; Mar. 10:7; 1Cor. 6:16; Efes. 5:31",
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a treia."
+          "text": "De aceea* va lăsa omul pe tatăl său şi pe mama sa, şi se va lipi de nevasta sa şi se vor face un singur trup."
         }
       ],
-      "verse_num": "13"
+      "verse_num": "24"
     },
     {
       "chunk_type": "section_title",
@@ -311,7 +301,7 @@
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Soarele, luna şi stelele"
+          "text": "Ispitirea femeii"
         }
       ],
       "verse_num": null
@@ -319,664 +309,603 @@
     {
       "chunk_type": "verse",
       "position": 23,
-      "references": null,
+      "references": "Gen. 3:7, 10, 11. **Exod. 32:25; Isa. 47:3",
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Dumnezeu a zis:"
-        },
-        {
-          "character_name": "Dumnezeu",
-          "role": "character",
-          "text": "Să fie nişte luminători* în întinderea cerului, ca să despartă ziua de noapte; ei să fie nişte"
+          "text": "Omul şi nevasta lui erau amândoi* goi şi nu le era** ruşine."
         }
       ],
-      "verse_num": "14"
+      "verse_num": "25"
     },
     {
-      "chunk_type": "verse",
+      "chunk_type": "chapter_number",
       "position": 24,
       "references": null,
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "şi să slujească de luminători în întinderea cerului, ca să lumineze pământul.” Şi aşa a fost."
+          "text": "Capitolul 3"
         }
       ],
-      "verse_num": "15"
+      "verse_num": null
     },
     {
-      "chunk_type": "verse",
+      "chunk_type": "chapter_name",
       "position": 25,
-      "references": null,
+      "references": "Apoc. 12:9; Apoc. 20:2. **Mat. 10:16; 2Cor. 11:3",
       "segments": [
         {
           "character_name": null,
           "role": "narrator",
-          "text": "Dumnezeu* a făcut cei doi mari luminători, şi anume: luminătorul cel mai mare ca să stăpânească ziua, şi**"
+          "text": "1. Şarpele* era mai** şiret decât toate fiarele câmpului pe care le făcuse Domnul Dumnezeu. El a zis femeii:"
         }
       ],
-      "verse_num": "16"
-    },
-    {
-      "chunk_type": "verse",
-      "position": 26,
-      "references": null,
-      "segments": [
-        {
-          "character_name": null,
-          "role": "narrator",
-          "text": "Dumnezeu i-a aşezat în întinderea cerului ca să lumineze pământul,"
-        }
-      ],
-      "verse_num": "17"
-    },
-    {
-      "chunk_type": "verse",
-      "position": 27,
-      "references": "Ier. 31:35",
-      "segments": [
-        {
-          "character_name": null,
-          "role": "narrator",
-          "text": "să stăpânească* ziua şi noaptea şi să despartă lumina de întuneric. Dumnezeu a văzut că lucrul acesta era bun."
-        }
-      ],
-      "verse_num": "18"
+      "verse_num": null
     }
   ],
-  "filename": "Biblia-in-limba-romana-Dumitru Cornilescu-page 5.pdf",
+  "filename": "Biblia-in-limba-romana-Dumitru Cornilescu-7.pdf",
   "format_lines": [
     {
       "alignment": "left",
-      "font_size": 17,
-      "text": "GENEZA"
+      "font_size": 12,
+      "text": "6. Ci un abur se ridica de pe pământ şi uda toată faţa pământului."
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "7. Domnul Dumnezeu a făcut pe om din ţărâna* pământului, i-a** suflat în nări† suflare de viaţă, şi omul s-a"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "făcut†† astfel un suflet viu."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Gen. 3:19, 23; Ps. 103:14; Ecl. 12:7; Isa. 64:8; 1Cor. 15:47. **Iov 33:4; Fap. 17:25. †Gen. 7:22; Isa. 2:22. ††1Cor. 15:45"
     },
     {
       "alignment": "left",
       "font_size": 13,
-      "text": "Capitolul 1"
+      "text": "Raiul"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "8. Apoi Domnul Dumnezeu a sădit o grădină* în Eden**, spre răsărit†; şi a pus†† acolo pe omul pe care-l"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "întocmise."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Gen. 13:10; Isa. 51:3; Ezec. 28:13; Ioel 2:3. **Gen. 3:24. †Gen. 4:16; 2Împ. 19:12; Ezec. 27:23. ††Gen. 2:15"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "9. Domnul Dumnezeu a făcut să răsară din pământ tot felul* de pomi, plăcuţi la vedere şi buni la mâncare, şi"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "pomul** vieţii în mijlocul grădinii, şi pomul† cunoştinţei binelui şi răului."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Ezec. 31:8. **Gen. 3:22; Prov. 3:18; Prov. 11:30; Apoc. 2:7; Apoc. 22:2, 14. †Gen. 2:17"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "10. Un râu ieşea din Eden şi uda grădina; şi de acolo se împărţea şi se făcea patru braţe."
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "11. Numele celui dintâi este Pison; el înconjoară toată* ţara Havila, unde se găseşte aur."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Gen. 25:18"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "12. Aurul din ţara aceasta este bun; acolo se găseşte şi bedelion* şi piatră de onix."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Num. 11:7"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "13. Numele râului al doilea este Ghihon; el înconjoară toată ţara Cuş."
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "14. Numele celui de al treilea este* Hidechela: el curge la răsăritul Asiriei. Al patrulea râu este Eufratul."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "aAdică: Tigru"
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Dan. 10:4"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "15. Domnul Dumnezeu a luat pe om şi l-a aşezat* în grădina Edenului, ca s-o lucreze şi s-o păzească."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Gen. 2:8"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "16. Domnul Dumnezeu a dat omului porunca aceasta: „Poţi să mănânci după plăcere din orice pom din grădină;"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "17. dar* din pomul cunoştinţei binelui şi răului să** nu mănânci, căci în ziua în care vei mânca din el vei muri†"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "negreşit.”"
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Gen. 2:9. **Gen. 3:1, 3, 11, 17. †Gen. 3:3, 19; Rom. 6:23; 1Cor. 15:56; Iac. 1:15; 1Ioan 5:16"
     },
     {
       "alignment": "left",
       "font_size": 13,
-      "text": "Vremurile străvechi de la facerea lumii până la Avraam*"
+      "text": "Facerea femeii"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "18. Domnul Dumnezeu a zis: „Nu este bine ca omul să fie singur; am* să-i fac un ajutor potrivit pentru el.”"
     },
     {
       "alignment": "left",
       "font_size": 9,
-      "text": "*Gen. 1 - Gen. 11:9"
+      "text": "*Gen. 3:12; 1Cor. 11:9; 1Tim. 2:13"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "19. Domnul Dumnezeu* a făcut din pământ toate fiarele câmpului şi toate păsările cerului; şi le-a adus** la om, ca"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "să vadă cum are să le numească; şi orice nume pe care-l dădea omul fiecărei vieţuitoare, acela-i era numele."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Gen. 1:20, 24. **Ps. 8:6; Gen. 6:20"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "20. Şi omul a pus nume tuturor vitelor, păsărilor cerului şi tuturor fiarelor câmpului; dar pentru om nu s-a găsit"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "niciun ajutor care să i se potrivească."
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "21. Atunci Domnul Dumnezeu a trimis un somn* adânc peste om, şi omul a adormit; Domnul Dumnezeu a luat"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "una din coastele lui şi a închis carnea la locul ei."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Gen. 15:12; 1Sam. 26:12"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "22. Din coasta pe care o luase din om, Domnul Dumnezeu a făcut o femeie şi a adus-o la* om."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Prov. 18:22; Evr. 13:4"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "23. Şi omul a zis: „Iată în sfârşit aceea care este os* din oasele mele şi carne din carnea mea! Ea se va numi"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "„femeie”a, pentru că a fost luată din** om.”"
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "aÎn ebraică işa vine de la un cuvânt care înseamnă bărbat iş"
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Gen. 29:14; Jud. 9:2; 2Sam. 5:1; 2Sam. 19:13; Efes. 5:30. **1Cor. 11:8"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "24. De aceea* va lăsa omul pe tatăl său şi pe mama sa, şi se va lipi de nevasta sa şi se vor face un singur trup."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Gen. 31:15; Ps. 45:10; Mat. 19:5; Mar. 10:7; 1Cor. 6:16; Efes. 5:31"
     },
     {
       "alignment": "left",
       "font_size": 13,
-      "text": "Facerea lumii"
+      "text": "Ispitirea femeii"
     },
     {
       "alignment": "left",
       "font_size": 12,
-      "text": "1. La început*, Dumnezeu a făcut** cerurile şi pământul."
+      "text": "25. Omul şi nevasta lui erau amândoi* goi şi nu le era** ruşine."
     },
     {
       "alignment": "left",
       "font_size": 9,
-      "text": "*Ioan 1:1, 2; Evr. 1:10. **Ps. 8:3; Ps. 33:6; Ps. 89:11, 12; Ps. 102:25; Ps. 136:5; Ps. 146:6; Isa. 44:24; Ier. 10:12; Ier. 51:15; Zah. 12:1; Fap. 14:15;"
-    },
-    {
-      "alignment": "left",
-      "font_size": 9,
-      "text": "Fap. 17:24; Col. 1:16, 17; Evr. 11:3; Apoc. 4:11; Apoc. 10:6"
+      "text": "*Gen. 3:7, 10, 11. **Exod. 32:25; Isa. 47:3"
     },
     {
       "alignment": "left",
       "font_size": 13,
-      "text": "Lumina"
+      "text": "Capitolul 3"
     },
     {
       "alignment": "left",
       "font_size": 12,
-      "text": "2. Pământul era pustiu şi gol; peste faţa adâncului de ape era întuneric, şi* Duhul lui Dumnezeu Se mişca pe"
+      "text": "1. Şarpele* era mai** şiret decât toate fiarele câmpului pe care le făcuse Domnul Dumnezeu. El a zis femeii:"
     },
     {
       "alignment": "left",
       "font_size": 12,
-      "text": "deasupra apelor."
+      "text": "„Oare a zis Dumnezeu cu adevărat: „Să nu mâncaţi din toţi pomii din grădină”?”"
     },
     {
       "alignment": "left",
       "font_size": 9,
-      "text": "*Ps. 33:6; Isa. 40:13, 14"
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "3. Dumnezeu* a zis: „Să fie** lumină!” Şi a fost lumină."
-    },
-    {
-      "alignment": "left",
-      "font_size": 9,
-      "text": "*Ps. 33:9. **2Cor. 4:6"
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "4. Dumnezeu a văzut că lumina era bună; şi Dumnezeu a despărţit lumina de întuneric."
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "5. Dumnezeu a numit lumina zi*, iar întunericul l-a numit noapte. Astfel, a fost o seară, şi apoi a fost o"
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "dimineaţă: aceasta a fost ziua întâi."
-    },
-    {
-      "alignment": "left",
-      "font_size": 9,
-      "text": "*Ps. 74:16; Ps. 104:20"
-    },
-    {
-      "alignment": "left",
-      "font_size": 13,
-      "text": "Cerul"
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "6. Dumnezeu a zis: „Să fie* o întindere între ape, şi ea să despartă apele de ape.”"
-    },
-    {
-      "alignment": "left",
-      "font_size": 9,
-      "text": "*Iov 37:18; Ps. 136:5; Ier. 10:12; Ier. 51:15"
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "7. Şi Dumnezeu a făcut întinderea, şi ea a despărţit* apele care sunt dedesubtul întinderii de apele care sunt"
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "deasupra** întinderii. Şi aşa a fost."
-    },
-    {
-      "alignment": "left",
-      "font_size": 9,
-      "text": "*Prov. 8:28. **Ps. 148:4"
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "8. Dumnezeu a numit întinderea cer. Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a doua."
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "Pământul"
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "9. Dumnezeu a zis: „Să* se strângă la un loc apele care sunt dedesubtul cerului şi să se arate uscatul!” Şi aşa a"
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "fost."
-    },
-    {
-      "alignment": "left",
-      "font_size": 9,
-      "text": "*Iov 26:10; Iov 38:8; Ps. 33:7; Ps. 95:5; Ps. 104:9; Ps. 136:6; Prov. 8:29; Ier. 5:22; 2Pet. 3:5"
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "10. Dumnezeu a numit uscatul pământ, iar grămada de ape a numit-o mări. Dumnezeu a văzut că lucrul acesta"
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "era bun."
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "11. Apoi Dumnezeu a zis: „Să dea* pământul verdeaţă, iarbă cu sămânţă, pomi roditori**, care să facă rod după"
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "soiul lor şi care să aibă în ei sămânţa lor pe pământ.” Şi aşa a fost."
-    },
-    {
-      "alignment": "left",
-      "font_size": 9,
-      "text": "*Evr. 6:7. **Luc. 6:44"
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "12. Pământul a dat verdeaţă, iarbă cu sămânţă după soiul ei şi pomi care fac rod şi care îşi au sămânţa în ei, după"
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "soiul lor. Dumnezeu a văzut că lucrul acesta era bun."
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "13. Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a treia."
-    },
-    {
-      "alignment": "left",
-      "font_size": 13,
-      "text": "Soarele, luna şi stelele"
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "14. Dumnezeu a zis: „Să fie nişte luminători* în întinderea cerului, ca să despartă ziua de noapte; ei să fie nişte"
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "semne** care să arate vremurile, zilele şi anii;"
-    },
-    {
-      "alignment": "left",
-      "font_size": 9,
-      "text": "*Deut. 4:19; Ps. 74:16; Ps. 136:7. **Ps. 74:17; Ps. 104:19"
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "15. şi să slujească de luminători în întinderea cerului, ca să lumineze pământul.” Şi aşa a fost."
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "16. Dumnezeu* a făcut cei doi mari luminători, şi anume: luminătorul cel mai mare ca să stăpânească ziua, şi**"
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "luminătorul cel mai mic ca să stăpânească noaptea; a făcut şi† stelele."
-    },
-    {
-      "alignment": "left",
-      "font_size": 9,
-      "text": "*Ps. 136:7, 8, 9; Ps. 148:3, 5. **Ps. 8:3. †Iov 38:7"
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "17. Dumnezeu i-a aşezat în întinderea cerului ca să lumineze pământul,"
-    },
-    {
-      "alignment": "left",
-      "font_size": 12,
-      "text": "18. să stăpânească* ziua şi noaptea şi să despartă lumina de întuneric. Dumnezeu a văzut că lucrul acesta era bun."
-    },
-    {
-      "alignment": "left",
-      "font_size": 9,
-      "text": "*Ier. 31:35"
+      "text": "*Apoc. 12:9; Apoc. 20:2. **Mat. 10:16; 2Cor. 11:3"
     }
   ],
   "language": "ro",
   "language_name": "Romanian",
   "pipeline": "bible",
   "tts_preview": {
-    "chunk_count": 34,
+    "chunk_count": 29,
     "chunks": [
       {
-        "character_count": 7,
+        "character_count": 63,
         "character_name": null,
-        "chunk_type": "book_title",
+        "chunk_type": "verse",
         "position": 1,
         "role": "narrator",
-        "text_for_tts": "GENEZA!",
-        "text_raw": "GENEZA",
-        "verse_num": null
+        "text_for_tts": "Ci un abur se ridica de pe pământ şi uda toată faţa pământului.",
+        "text_raw": "Ci un abur se ridica de pe pământ şi uda toată faţa pământului.",
+        "verse_num": "6"
       },
       {
-        "character_count": 12,
+        "character_count": 129,
         "character_name": null,
-        "chunk_type": "chapter_number",
+        "chunk_type": "verse",
         "position": 2,
         "role": "narrator",
-        "text_for_tts": "Capitolul 1!",
-        "text_raw": "Capitolul 1",
-        "verse_num": null
-      },
-      {
-        "character_count": 55,
-        "character_name": null,
-        "chunk_type": "chapter_name",
-        "position": 3,
-        "role": "narrator",
-        "text_for_tts": "Vremurile străvechi de la facerea lumii până la Avraam!",
-        "text_raw": "Vremurile străvechi de la facerea lumii până la Avraam*",
-        "verse_num": null
-      },
-      {
-        "character_count": 51,
-        "character_name": null,
-        "chunk_type": "verse",
-        "position": 4,
-        "role": "narrator",
-        "text_for_tts": "La început , Dumnezeu a făcut cerurile şi pământul.",
-        "text_raw": "La început*, Dumnezeu a făcut** cerurile şi pământul.",
-        "verse_num": "1"
-      },
-      {
-        "character_count": 7,
-        "character_name": null,
-        "chunk_type": "section_title",
-        "position": 5,
-        "role": "narrator",
-        "text_for_tts": "Lumina!",
-        "text_raw": "Lumina",
-        "verse_num": null
-      },
-      {
-        "character_count": 104,
-        "character_name": null,
-        "chunk_type": "verse",
-        "position": 6,
-        "role": "narrator",
-        "text_for_tts": "Pământul era pustiu şi gol; peste faţa adâncului de ape era întuneric, şi Duhul lui Dumnezeu Se mişca pe",
-        "text_raw": "Pământul era pustiu şi gol; peste faţa adâncului de ape era întuneric, şi* Duhul lui Dumnezeu Se mişca pe",
-        "verse_num": "2"
-      },
-      {
-        "character_count": 15,
-        "character_name": null,
-        "chunk_type": "verse",
-        "position": 7,
-        "role": "narrator",
-        "text_for_tts": "Dumnezeu a zis:",
-        "text_raw": "Dumnezeu* a zis:",
-        "verse_num": "3"
-      },
-      {
-        "character_count": 14,
-        "character_name": "Dumnezeu",
-        "chunk_type": "verse",
-        "position": 8,
-        "role": "character",
-        "text_for_tts": "Să fie lumină!",
-        "text_raw": "Să fie** lumină!",
-        "verse_num": "3"
-      },
-      {
-        "character_count": 17,
-        "character_name": null,
-        "chunk_type": "verse",
-        "position": 9,
-        "role": "narrator",
-        "text_for_tts": "Şi a fost lumină.",
-        "text_raw": "Şi a fost lumină.",
-        "verse_num": "3"
-      },
-      {
-        "character_count": 81,
-        "character_name": null,
-        "chunk_type": "verse",
-        "position": 10,
-        "role": "narrator",
-        "text_for_tts": "Dumnezeu a văzut că lumina era bună; şi Dumnezeu a despărţit lumina de întuneric.",
-        "text_raw": "Dumnezeu a văzut că lumina era bună; şi Dumnezeu a despărţit lumina de întuneric.",
-        "verse_num": "4"
-      },
-      {
-        "character_count": 103,
-        "character_name": null,
-        "chunk_type": "verse",
-        "position": 11,
-        "role": "narrator",
-        "text_for_tts": "Dumnezeu a numit lumina zi , iar întunericul l-a numit noapte. Astfel, a fost o seară, şi apoi a fost o",
-        "text_raw": "Dumnezeu a numit lumina zi*, iar întunericul l-a numit noapte. Astfel, a fost o seară, şi apoi a fost o",
-        "verse_num": "5"
+        "text_for_tts": "Domnul Dumnezeu a făcut pe om din ţărâna pământului, i-a suflat în nări suflare de viaţă, şi omul s-a făcut astfel un suflet viu.",
+        "text_raw": "Domnul Dumnezeu a făcut pe om din ţărâna* pământului, i-a** suflat în nări† suflare de viaţă, şi omul s-a făcut†† astfel un suflet viu.",
+        "verse_num": "7"
       },
       {
         "character_count": 6,
         "character_name": null,
         "chunk_type": "section_title",
-        "position": 12,
+        "position": 3,
         "role": "narrator",
-        "text_for_tts": "Cerul!",
-        "text_raw": "Cerul",
+        "text_for_tts": "Raiul!",
+        "text_raw": "Raiul",
         "verse_num": null
       },
       {
-        "character_count": 15,
+        "character_count": 107,
         "character_name": null,
         "chunk_type": "verse",
-        "position": 13,
+        "position": 4,
         "role": "narrator",
-        "text_for_tts": "Dumnezeu a zis:",
-        "text_raw": "Dumnezeu a zis:",
-        "verse_num": "6"
-      },
-      {
-        "character_count": 61,
-        "character_name": "Dumnezeu",
-        "chunk_type": "verse",
-        "position": 14,
-        "role": "character",
-        "text_for_tts": "Să fie o întindere între ape, şi ea să despartă apele de ape.",
-        "text_raw": "Să fie* o întindere între ape, şi ea să despartă apele de ape.",
-        "verse_num": "6"
-      },
-      {
-        "character_count": 106,
-        "character_name": null,
-        "chunk_type": "verse",
-        "position": 15,
-        "role": "narrator",
-        "text_for_tts": "Şi Dumnezeu a făcut întinderea, şi ea a despărţit apele care sunt dedesubtul întinderii de apele care sunt",
-        "text_raw": "Şi Dumnezeu a făcut întinderea, şi ea a despărţit* apele care sunt dedesubtul întinderii de apele care sunt",
-        "verse_num": "7"
-      },
-      {
-        "character_count": 112,
-        "character_name": null,
-        "chunk_type": "verse",
-        "position": 16,
-        "role": "narrator",
-        "text_for_tts": "Dumnezeu a numit întinderea cer. Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a doua.",
-        "text_raw": "Dumnezeu a numit întinderea cer. Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a doua.",
+        "text_for_tts": "Apoi Domnul Dumnezeu a sădit o grădină în Eden , spre răsărit ; şi a pus acolo pe omul pe care-l întocmise.",
+        "text_raw": "Apoi Domnul Dumnezeu a sădit o grădină* în Eden**, spre răsărit†; şi a pus†† acolo pe omul pe care-l întocmise.",
         "verse_num": "8"
       },
       {
-        "character_count": 8,
+        "character_count": 179,
         "character_name": null,
         "chunk_type": "verse",
-        "position": 17,
+        "position": 5,
         "role": "narrator",
-        "text_for_tts": "Pământul",
-        "text_raw": "Pământul",
+        "text_for_tts": "Domnul Dumnezeu a făcut să răsară din pământ tot felul de pomi, plăcuţi la vedere şi buni la mâncare, şi pomul vieţii în mijlocul grădinii, şi pomul cunoştinţei binelui şi răului.",
+        "text_raw": "Domnul Dumnezeu a făcut să răsară din pământ tot felul* de pomi, plăcuţi la vedere şi buni la mâncare, şi pomul** vieţii în mijlocul grădinii, şi pomul† cunoştinţei binelui şi răului.",
         "verse_num": "9"
       },
       {
-        "character_count": 15,
+        "character_count": 86,
         "character_name": null,
         "chunk_type": "verse",
-        "position": 18,
+        "position": 6,
         "role": "narrator",
-        "text_for_tts": "Dumnezeu a zis:",
-        "text_raw": "Dumnezeu a zis:",
-        "verse_num": "9"
-      },
-      {
-        "character_count": 82,
-        "character_name": "Dumnezeu",
-        "chunk_type": "verse",
-        "position": 19,
-        "role": "character",
-        "text_for_tts": "Să se strângă la un loc apele care sunt dedesubtul cerului şi să se arate uscatul!",
-        "text_raw": "Să* se strângă la un loc apele care sunt dedesubtul cerului şi să se arate uscatul!",
-        "verse_num": "9"
-      },
-      {
-        "character_count": 8,
-        "character_name": null,
-        "chunk_type": "verse",
-        "position": 20,
-        "role": "narrator",
-        "text_for_tts": "Şi aşa a",
-        "text_raw": "Şi aşa a",
-        "verse_num": "9"
-      },
-      {
-        "character_count": 101,
-        "character_name": null,
-        "chunk_type": "verse",
-        "position": 21,
-        "role": "narrator",
-        "text_for_tts": "Dumnezeu a numit uscatul pământ, iar grămada de ape a numit-o mări. Dumnezeu a văzut că lucrul acesta",
-        "text_raw": "Dumnezeu a numit uscatul pământ, iar grămada de ape a numit-o mări. Dumnezeu a văzut că lucrul acesta",
+        "text_for_tts": "Un râu ieşea din Eden şi uda grădina; şi de acolo se împărţea şi se făcea patru braţe.",
+        "text_raw": "Un râu ieşea din Eden şi uda grădina; şi de acolo se împărţea şi se făcea patru braţe.",
         "verse_num": "10"
       },
       {
-        "character_count": 8,
+        "character_count": 85,
         "character_name": null,
         "chunk_type": "verse",
-        "position": 22,
+        "position": 7,
         "role": "narrator",
-        "text_for_tts": "era bun.",
-        "text_raw": "era bun.",
+        "text_for_tts": "Numele celui dintâi este Pison; el înconjoară toată ţara Havila, unde se găseşte aur.",
+        "text_raw": "Numele celui dintâi este Pison; el înconjoară toată* ţara Havila, unde se găseşte aur.",
         "verse_num": "11"
-      },
-      {
-        "character_count": 20,
-        "character_name": null,
-        "chunk_type": "verse",
-        "position": 23,
-        "role": "narrator",
-        "text_for_tts": "Apoi Dumnezeu a zis:",
-        "text_raw": "Apoi Dumnezeu a zis:",
-        "verse_num": "11"
-      },
-      {
-        "character_count": 81,
-        "character_name": "Apoi Dumnezeu",
-        "chunk_type": "verse",
-        "position": 24,
-        "role": "character",
-        "text_for_tts": "Să dea pământul verdeaţă, iarbă cu sămânţă, pomi roditori , care să facă rod după",
-        "text_raw": "Să dea* pământul verdeaţă, iarbă cu sămânţă, pomi roditori**, care să facă rod după",
-        "verse_num": "11"
-      },
-      {
-        "character_count": 111,
-        "character_name": null,
-        "chunk_type": "verse",
-        "position": 25,
-        "role": "narrator",
-        "text_for_tts": "Pământul a dat verdeaţă, iarbă cu sămânţă după soiul ei şi pomi care fac rod şi care îşi au sămânţa în ei, după",
-        "text_raw": "Pământul a dat verdeaţă, iarbă cu sămânţă după soiul ei şi pomi care fac rod şi care îşi au sămânţa în ei, după",
-        "verse_num": "12"
-      },
-      {
-        "character_count": 53,
-        "character_name": null,
-        "chunk_type": "verse",
-        "position": 26,
-        "role": "narrator",
-        "text_for_tts": "soiul lor. Dumnezeu a văzut că lucrul acesta era bun.",
-        "text_raw": "soiul lor. Dumnezeu a văzut că lucrul acesta era bun.",
-        "verse_num": "13"
       },
       {
         "character_count": 80,
         "character_name": null,
         "chunk_type": "verse",
-        "position": 27,
+        "position": 8,
         "role": "narrator",
-        "text_for_tts": "Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a treia.",
-        "text_raw": "Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a treia.",
-        "verse_num": "13"
-      },
-      {
-        "character_count": 25,
-        "character_name": null,
-        "chunk_type": "section_title",
-        "position": 28,
-        "role": "narrator",
-        "text_for_tts": "Soarele, luna şi stelele!",
-        "text_raw": "Soarele, luna şi stelele",
-        "verse_num": null
-      },
-      {
-        "character_count": 15,
-        "character_name": null,
-        "chunk_type": "verse",
-        "position": 29,
-        "role": "narrator",
-        "text_for_tts": "Dumnezeu a zis:",
-        "text_raw": "Dumnezeu a zis:",
-        "verse_num": "14"
-      },
-      {
-        "character_count": 93,
-        "character_name": "Dumnezeu",
-        "chunk_type": "verse",
-        "position": 30,
-        "role": "character",
-        "text_for_tts": "Să fie nişte luminători în întinderea cerului, ca să despartă ziua de noapte; ei să fie nişte",
-        "text_raw": "Să fie nişte luminători* în întinderea cerului, ca să despartă ziua de noapte; ei să fie nişte",
-        "verse_num": "14"
-      },
-      {
-        "character_count": 93,
-        "character_name": null,
-        "chunk_type": "verse",
-        "position": 31,
-        "role": "narrator",
-        "text_for_tts": "şi să slujească de luminători în întinderea cerului, ca să lumineze pământul.” Şi aşa a fost.",
-        "text_raw": "şi să slujească de luminători în întinderea cerului, ca să lumineze pământul.” Şi aşa a fost.",
-        "verse_num": "15"
-      },
-      {
-        "character_count": 103,
-        "character_name": null,
-        "chunk_type": "verse",
-        "position": 32,
-        "role": "narrator",
-        "text_for_tts": "Dumnezeu a făcut cei doi mari luminători, şi anume: luminătorul cel mai mare ca să stăpânească ziua, şi",
-        "text_raw": "Dumnezeu* a făcut cei doi mari luminători, şi anume: luminătorul cel mai mare ca să stăpânească ziua, şi**",
-        "verse_num": "16"
+        "text_for_tts": "Aurul din ţara aceasta este bun; acolo se găseşte şi bedelion şi piatră de onix.",
+        "text_raw": "Aurul din ţara aceasta este bun; acolo se găseşte şi bedelion* şi piatră de onix.",
+        "verse_num": "12"
       },
       {
         "character_count": 66,
         "character_name": null,
         "chunk_type": "verse",
-        "position": 33,
+        "position": 9,
         "role": "narrator",
-        "text_for_tts": "Dumnezeu i-a aşezat în întinderea cerului ca să lumineze pământul,",
-        "text_raw": "Dumnezeu i-a aşezat în întinderea cerului ca să lumineze pământul,",
+        "text_for_tts": "Numele râului al doilea este Ghihon; el înconjoară toată ţara Cuş.",
+        "text_raw": "Numele râului al doilea este Ghihon; el înconjoară toată ţara Cuş.",
+        "verse_num": "13"
+      },
+      {
+        "character_count": 118,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 10,
+        "role": "narrator",
+        "text_for_tts": "Numele celui de al treilea este Hidechela: el curge la răsăritul Asiriei. Al patrulea râu este Eufratul. aAdică: Tigru",
+        "text_raw": "Numele celui de al treilea este* Hidechela: el curge la răsăritul Asiriei. Al patrulea râu este Eufratul. aAdică: Tigru",
+        "verse_num": "14"
+      },
+      {
+        "character_count": 95,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 11,
+        "role": "narrator",
+        "text_for_tts": "Domnul Dumnezeu a luat pe om şi l-a aşezat în grădina Edenului, ca s-o lucreze şi s-o păzească.",
+        "text_raw": "Domnul Dumnezeu a luat pe om şi l-a aşezat* în grădina Edenului, ca s-o lucreze şi s-o păzească.",
+        "verse_num": "15"
+      },
+      {
+        "character_count": 45,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 12,
+        "role": "narrator",
+        "text_for_tts": "Domnul Dumnezeu a dat omului porunca aceasta:",
+        "text_raw": "Domnul Dumnezeu a dat omului porunca aceasta:",
+        "verse_num": "16"
+      },
+      {
+        "character_count": 55,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 13,
+        "role": "character",
+        "text_for_tts": "Poţi să mănânci după plăcere din orice pom din grădină;",
+        "text_raw": "Poţi să mănânci după plăcere din orice pom din grădină;",
+        "verse_num": "16"
+      },
+      {
+        "character_count": 116,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 14,
+        "role": "narrator",
+        "text_for_tts": "dar din pomul cunoştinţei binelui şi răului să nu mănânci, căci în ziua în care vei mânca din el vei muri negreşit.”",
+        "text_raw": "dar* din pomul cunoştinţei binelui şi răului să** nu mănânci, căci în ziua în care vei mânca din el vei muri† negreşit.”",
         "verse_num": "17"
       },
       {
-        "character_count": 109,
+        "character_count": 15,
+        "character_name": null,
+        "chunk_type": "section_title",
+        "position": 15,
+        "role": "narrator",
+        "text_for_tts": "Facerea femeii!",
+        "text_raw": "Facerea femeii",
+        "verse_num": null
+      },
+      {
+        "character_count": 22,
         "character_name": null,
         "chunk_type": "verse",
-        "position": 34,
+        "position": 16,
         "role": "narrator",
-        "text_for_tts": "să stăpânească ziua şi noaptea şi să despartă lumina de întuneric. Dumnezeu a văzut că lucrul acesta era bun.",
-        "text_raw": "să stăpânească* ziua şi noaptea şi să despartă lumina de întuneric. Dumnezeu a văzut că lucrul acesta era bun.",
+        "text_for_tts": "Domnul Dumnezeu a zis:",
+        "text_raw": "Domnul Dumnezeu a zis:",
         "verse_num": "18"
+      },
+      {
+        "character_count": 77,
+        "character_name": "Domnul",
+        "chunk_type": "verse",
+        "position": 17,
+        "role": "character",
+        "text_for_tts": "Nu este bine ca omul să fie singur; am să-i fac un ajutor potrivit pentru el.",
+        "text_raw": "Nu este bine ca omul să fie singur; am* să-i fac un ajutor potrivit pentru el.",
+        "verse_num": "18"
+      },
+      {
+        "character_count": 216,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 18,
+        "role": "narrator",
+        "text_for_tts": "Domnul Dumnezeu a făcut din pământ toate fiarele câmpului şi toate păsările cerului; şi le-a adus la om, ca să vadă cum are să le numească; şi orice nume pe care-l dădea omul fiecărei vieţuitoare, acela-i era numele.",
+        "text_raw": "Domnul Dumnezeu* a făcut din pământ toate fiarele câmpului şi toate păsările cerului; şi le-a adus** la om, ca să vadă cum are să le numească; şi orice nume pe care-l dădea omul fiecărei vieţuitoare, acela-i era numele.",
+        "verse_num": "19"
+      },
+      {
+        "character_count": 150,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 19,
+        "role": "narrator",
+        "text_for_tts": "Şi omul a pus nume tuturor vitelor, păsărilor cerului şi tuturor fiarelor câmpului; dar pentru om nu s-a găsit niciun ajutor care să i se potrivească.",
+        "text_raw": "Şi omul a pus nume tuturor vitelor, păsărilor cerului şi tuturor fiarelor câmpului; dar pentru om nu s-a găsit niciun ajutor care să i se potrivească.",
+        "verse_num": "20"
+      },
+      {
+        "character_count": 150,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 20,
+        "role": "narrator",
+        "text_for_tts": "Atunci Domnul Dumnezeu a trimis un somn adânc peste om, şi omul a adormit; Domnul Dumnezeu a luat una din coastele lui şi a închis carnea la locul ei.",
+        "text_raw": "Atunci Domnul Dumnezeu a trimis un somn* adânc peste om, şi omul a adormit; Domnul Dumnezeu a luat una din coastele lui şi a închis carnea la locul ei.",
+        "verse_num": "21"
+      },
+      {
+        "character_count": 86,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 21,
+        "role": "narrator",
+        "text_for_tts": "Din coasta pe care o luase din om, Domnul Dumnezeu a făcut o femeie şi a adus-o la om.",
+        "text_raw": "Din coasta pe care o luase din om, Domnul Dumnezeu a făcut o femeie şi a adus-o la* om.",
+        "verse_num": "22"
+      },
+      {
+        "character_count": 14,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 22,
+        "role": "narrator",
+        "text_for_tts": "Şi omul a zis:",
+        "text_raw": "Şi omul a zis:",
+        "verse_num": "23"
+      },
+      {
+        "character_count": 97,
+        "character_name": "Şi omul",
+        "chunk_type": "verse",
+        "position": 23,
+        "role": "character",
+        "text_for_tts": "Iată în sfârşit aceea care este os din oasele mele şi carne din carnea mea! Ea se va numi „femeie",
+        "text_raw": "Iată în sfârşit aceea care este os* din oasele mele şi carne din carnea mea! Ea se va numi „femeie",
+        "verse_num": "23"
+      },
+      {
+        "character_count": 95,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 24,
+        "role": "narrator",
+        "text_for_tts": "a, pentru că a fost luată din om.” aÎn ebraică işa vine de la un cuvânt care înseamnă bărbat iş",
+        "text_raw": "a, pentru că a fost luată din** om.” aÎn ebraică işa vine de la un cuvânt care înseamnă bărbat iş",
+        "verse_num": "23"
+      },
+      {
+        "character_count": 108,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 25,
+        "role": "narrator",
+        "text_for_tts": "De aceea va lăsa omul pe tatăl său şi pe mama sa, şi se va lipi de nevasta sa şi se vor face un singur trup.",
+        "text_raw": "De aceea* va lăsa omul pe tatăl său şi pe mama sa, şi se va lipi de nevasta sa şi se vor face un singur trup.",
+        "verse_num": "24"
+      },
+      {
+        "character_count": 17,
+        "character_name": null,
+        "chunk_type": "section_title",
+        "position": 26,
+        "role": "narrator",
+        "text_for_tts": "Ispitirea femeii!",
+        "text_raw": "Ispitirea femeii",
+        "verse_num": null
+      },
+      {
+        "character_count": 57,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 27,
+        "role": "narrator",
+        "text_for_tts": "Omul şi nevasta lui erau amândoi goi şi nu le era ruşine.",
+        "text_raw": "Omul şi nevasta lui erau amândoi* goi şi nu le era** ruşine.",
+        "verse_num": "25"
+      },
+      {
+        "character_count": 12,
+        "character_name": null,
+        "chunk_type": "chapter_number",
+        "position": 28,
+        "role": "narrator",
+        "text_for_tts": "Capitolul 3!",
+        "text_raw": "Capitolul 3",
+        "verse_num": null
+      },
+      {
+        "character_count": 106,
+        "character_name": null,
+        "chunk_type": "chapter_name",
+        "position": 29,
+        "role": "narrator",
+        "text_for_tts": "1. Şarpele era mai şiret decât toate fiarele câmpului pe care le făcuse Domnul Dumnezeu. El a zis femeii:!",
+        "text_raw": "1. Şarpele* era mai** şiret decât toate fiarele câmpului pe care le făcuse Domnul Dumnezeu. El a zis femeii:",
+        "verse_num": null
       }
     ],
-    "total_character_count": 1837
+    "total_character_count": 2452
   }
 }

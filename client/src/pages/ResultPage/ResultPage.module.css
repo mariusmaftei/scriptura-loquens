@@ -488,6 +488,28 @@
   flex-wrap: wrap;
 }
 
+.autoNextLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  color: #495057;
+  cursor: pointer;
+  user-select: none;
+}
+
+.autoNextLabel:hover {
+  color: #212529;
+}
+
+.autoNextCheckbox {
+  width: 1rem;
+  height: 1rem;
+  accent-color: #5a1a1a;
+  cursor: pointer;
+}
+
 .playerSettingsBtn {
   display: inline-flex;
   align-items: center;

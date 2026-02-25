@@ -133,7 +133,7 @@ const PDFUpload = ({
               loading={uploading}
               disabled={uploading}
             >
-              {uploading ? "Se încarcă..." : "Import PDF"}
+              {uploading ? "Se încarcă..." : "Procesează PDF"}
             </Button>
           </div>
         </div>

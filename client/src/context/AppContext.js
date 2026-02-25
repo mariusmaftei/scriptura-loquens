@@ -22,11 +22,11 @@ export const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const uploadPDF = useCallback(async (file) => {
+  const uploadPDF = useCallback(async (file, bookOptions = {}) => {
     try {
       setLoading(true);
       setError(null);
-      const result = await pdfAPI.uploadPDF(file);
+      const result = await pdfAPI.uploadPDF(file, bookOptions);
       setCurrentPDF(result);
       return result;
     } catch (err) {

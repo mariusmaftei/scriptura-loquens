@@ -1,14 +1,15 @@
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, request, jsonify, send_file
 from werkzeug.utils import secure_filename
 from app.database import db
-from app.models import PDF, ExtractedText, Chunk, AmbientTrack
+from app.models import PDF, ExtractedText, Chunk, AmbientTrack, AudioFile
 from app.services.pdf_service import process_pdf_file, process_pdf_file_with_format
 from app.services.gemini_service import analyze_text_in_batches
-from app.services.tts_service import prepare_text_for_tts
+from app.services.tts_service import prepare_text_for_tts, _pdf_ref_from_filename
 from app.utils.file_handler import save_uploaded_file, generate_file_hash
 from app.config import Config
 import json
 import os
+import shutil
 import tempfile
 import traceback
 import uuid
@@ -108,8 +109,26 @@ def upload_pdf():
     if not file.filename.lower().endswith('.pdf'):
         return jsonify({'error': 'Invalid file type. Only PDF files are allowed'}), 400
     
+    book_key = (request.form.get('book_key') or '').strip() or None
+    book_display_name = (request.form.get('book_display_name') or '').strip() or None
+    book_author = (request.form.get('book_author') or '').strip() or None
+    book_genre = (request.form.get('book_genre') or '').strip() or None
+
+    cover_file = request.files.get('cover')
+    cover_path_rel = None
+    upload_folder = os.path.abspath(Config.UPLOAD_FOLDER)
+    if cover_file and cover_file.filename:
+        ext = (os.path.splitext(secure_filename(cover_file.filename))[1] or '').lower()
+        if ext in ('.jpg', '.jpeg', '.png', '.gif', '.webp'):
+            covers_dir = os.path.join(upload_folder, 'covers')
+            os.makedirs(covers_dir, exist_ok=True)
+            safe_key = (book_key or 'default').replace(os.sep, '-').strip() or 'default'
+            cover_name = f"{safe_key}_{uuid.uuid4().hex}{ext}"
+            cover_abs = os.path.join(covers_dir, cover_name)
+            cover_file.save(cover_abs)
+            cover_path_rel = os.path.join('covers', cover_name).replace(os.sep, '/')
+
     try:
-        upload_folder = os.path.abspath(Config.UPLOAD_FOLDER)
         file_path = save_uploaded_file(file, upload_folder)
         file_hash = generate_file_hash(file_path)
         existing_pdf = PDF.query.filter_by(file_hash=file_hash).first()
@@ -118,6 +137,13 @@ def upload_pdf():
             existing_pdf.filename = file.filename
             existing_pdf.use_ai = False
             existing_pdf.pipeline = 'bible'
+            if book_key is not None:
+                existing_pdf.book_key = book_key
+                existing_pdf.book_display_name = book_display_name
+                existing_pdf.book_author = book_author
+                existing_pdf.book_genre = book_genre
+            if cover_path_rel is not None:
+                existing_pdf.book_cover_path = cover_path_rel
             db.session.commit()
             return jsonify(existing_pdf.to_dict()), 200
         pdf = PDF(
@@ -127,6 +153,11 @@ def upload_pdf():
             status='pending',
             use_ai=False,
             pipeline='bible',
+            book_key=book_key,
+            book_display_name=book_display_name,
+            book_author=book_author,
+            book_genre=book_genre,
+            book_cover_path=cover_path_rel,
         )
         db.session.add(pdf)
         db.session.commit()
@@ -140,6 +171,97 @@ def upload_pdf():
 def get_pdf(pdf_id):
     pdf = PDF.query.get_or_404(pdf_id)
     return jsonify(pdf.to_dict())
+
+
+@bp.route('/pdf/<int:pdf_id>/book-cover', methods=['GET'])
+def get_pdf_book_cover(pdf_id):
+    pdf = PDF.query.get_or_404(pdf_id)
+    cover_rel = getattr(pdf, 'book_cover_path', None)
+    if not cover_rel or not cover_rel.strip():
+        return jsonify({'error': 'No cover'}), 404
+    path = os.path.join(Config.UPLOAD_FOLDER, cover_rel.replace('/', os.sep))
+    path = os.path.abspath(path)
+    root = os.path.abspath(Config.UPLOAD_FOLDER)
+    if not path.startswith(root) or not os.path.isfile(path):
+        return jsonify({'error': 'Cover not found'}), 404
+    mimetypes = {'.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.gif': 'image/gif', '.webp': 'image/webp'}
+    ext = os.path.splitext(path)[1].lower()
+    mimetype = mimetypes.get(ext, 'application/octet-stream')
+    return send_file(path, mimetype=mimetype, as_attachment=False)
+
+
+def _remove_pdf_and_audio(pdf_id):
+    """Remove PDF record, its file, all related DB rows, and audio/ambient files on disk."""
+    pdf = PDF.query.get(pdf_id)
+    if not pdf:
+        return
+    upload_root = os.path.abspath(Config.UPLOAD_FOLDER)
+    audio_root = os.path.abspath(Config.AUDIO_FOLDER)
+    chunks = Chunk.query.filter_by(pdf_id=pdf_id).all()
+    chunk_ids = [c.id for c in chunks]
+    audio_files = AudioFile.query.filter(AudioFile.chunk_id.in_(chunk_ids)).all() if chunk_ids else []
+    for af in audio_files:
+        path = (af.audio_path or "").strip()
+        if path and os.path.isabs(path) and os.path.isfile(path):
+            try:
+                os.remove(path)
+            except OSError:
+                pass
+        elif path:
+            for base in (audio_root, os.path.join(audio_root, 'transcriptions')):
+                candidate = os.path.join(base, path) if not os.path.isabs(path) else path
+                if os.path.isfile(candidate):
+                    try:
+                        os.remove(candidate)
+                    except OSError:
+                        pass
+                    break
+    pdf_ref = _pdf_ref_from_filename(pdf.filename, pdf_id)
+    for folder_name in (pdf_ref, str(pdf_id)):
+        trans_dir = os.path.join(audio_root, 'transcriptions', folder_name)
+        if os.path.isdir(trans_dir):
+            try:
+                shutil.rmtree(trans_dir)
+            except OSError:
+                pass
+    ambient_dir = os.path.join(audio_root, 'ambient', str(pdf_id))
+    if os.path.isdir(ambient_dir):
+        try:
+            shutil.rmtree(ambient_dir)
+        except OSError:
+            pass
+    file_path = (pdf.file_path or "").strip()
+    if file_path:
+        if not os.path.isabs(file_path):
+            file_path = os.path.join(upload_root, os.path.basename(file_path))
+        if os.path.isfile(file_path):
+            try:
+                os.remove(file_path)
+            except OSError:
+                pass
+    cover_rel = getattr(pdf, 'book_cover_path', None)
+    if cover_rel and cover_rel.strip():
+        cover_path = os.path.join(upload_root, cover_rel.replace('/', os.sep))
+        cover_path = os.path.abspath(cover_path)
+        if cover_path.startswith(upload_root) and os.path.isfile(cover_path):
+            try:
+                os.remove(cover_path)
+            except OSError:
+                pass
+    db.session.delete(pdf)
+    db.session.commit()
+
+
+@bp.route('/pdf/<int:pdf_id>', methods=['DELETE'])
+def delete_pdf(pdf_id):
+    pdf = PDF.query.get_or_404(pdf_id)
+    try:
+        _remove_pdf_and_audio(pdf_id)
+        return jsonify({'message': 'Document and all associated data (including audio) have been removed'}), 200
+    except Exception as e:
+        db.session.rollback()
+        traceback.print_exc()
+        return jsonify({'error': str(e), 'message': str(e)}), 500
 
 
 @bp.route('/pdf/<int:pdf_id>/custom-voice-names', methods=['PUT'])

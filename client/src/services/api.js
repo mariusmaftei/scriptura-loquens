@@ -9,6 +9,11 @@ export const getAudioFileUrl = (audioId) =>
 export const getAmbientFileUrl = (ambientId) =>
   `${API_BASE_URL}/ambient/${ambientId}/file`;
 
+export const getBookCoverUrl = (pdf) =>
+  pdf?.book_cover_path && pdf?.id
+    ? `${API_BASE_URL}/pdf/${pdf.id}/book-cover`
+    : null;
+
 const api = axios.create({
   baseURL: API_BASE_URL,
   headers: {
@@ -22,11 +27,16 @@ api.interceptors.response.use(
 );
 
 export const pdfAPI = {
-  uploadPDF: async (file, useAi = false, pipeline = "bible") => {
+  uploadPDF: async (file, options = {}) => {
     const formData = new FormData();
     formData.append("file", file);
     formData.append("use_ai", "false");
     formData.append("pipeline", "bible");
+    if (options.bookKey) formData.append("book_key", options.bookKey);
+    if (options.bookDisplayName) formData.append("book_display_name", options.bookDisplayName);
+    if (options.bookAuthor) formData.append("book_author", options.bookAuthor);
+    if (options.bookGenre) formData.append("book_genre", options.bookGenre);
+    if (options.cover) formData.append("cover", options.cover);
 
     const response = await api.post("/upload-pdf", formData, {
       headers: {
@@ -104,6 +114,11 @@ export const pdfAPI = {
 
   listPDFs: async () => {
     const response = await api.get("/pdfs");
+    return response.data;
+  },
+
+  deletePDF: async (pdfId) => {
+    const response = await api.delete(`/pdf/${pdfId}`);
     return response.data;
   },
 

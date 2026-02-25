@@ -78,11 +78,11 @@ def classify_lines(lines: list[dict[str, Any]]) -> list[dict[str, Any]]:
             result.append({**ln, "line_type": "chapter_reference"})
             i += 1
             continue
+        core = text.rstrip('\"“”\'').rstrip()
         if (
             (fs >= verse_font * 1.05 or (fs >= verse_font * 0.98 and len(text) <= 30))
             and len(text) < 80
-            and not text.endswith(".")
-            and not text.endswith(";")
+            and not core.endswith((".", ";", ":", "!", "?", ","))
             and not _is_uppercase_title(text)
             and not re.match(r"^\s*\d", text)
             and not BIBLE_REF_RE.fullmatch(text.strip())

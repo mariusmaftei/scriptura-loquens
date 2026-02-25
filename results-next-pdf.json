@@ -1,0 +1,1002 @@
+{
+  "chunks": [
+    {
+      "chunk_type": "verse",
+      "position": 1,
+      "references": null,
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a patra."
+        }
+      ],
+      "verse_num": "19"
+    },
+    {
+      "chunk_type": "section_title",
+      "position": 2,
+      "references": null,
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Vieţuitoarele mării"
+        }
+      ],
+      "verse_num": null
+    },
+    {
+      "chunk_type": "verse",
+      "position": 3,
+      "references": null,
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Dumnezeu a zis:"
+        },
+        {
+          "character_name": "Dumnezeu",
+          "role": "character",
+          "text": "Să mişune apele de vieţuitoare şi să zboare păsări deasupra pământului pe întinderea"
+        }
+      ],
+      "verse_num": "20"
+    },
+    {
+      "chunk_type": "section_title",
+      "position": 4,
+      "references": null,
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "cerului.”"
+        }
+      ],
+      "verse_num": null
+    },
+    {
+      "chunk_type": "verse",
+      "position": 5,
+      "references": "Gen. 6:20; Gen. 7:14; Gen. 8:19; Ps. 104:26",
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Dumnezeu* a făcut peştii cei mari şi toate vieţuitoarele care se mişcă şi de care mişună apele, după soiurile lor; a făcut şi orice pasăre înaripată după soiul ei. Dumnezeu a văzut că erau bune."
+        }
+      ],
+      "verse_num": "21"
+    },
+    {
+      "chunk_type": "verse",
+      "position": 6,
+      "references": null,
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Dumnezeu le-a binecuvântat şi a zis:"
+        },
+        {
+          "character_name": "Dumnezeu",
+          "role": "character",
+          "text": "Creşteţi*, înmulţiţi-vă şi umpleţi apele mărilor; să se înmulţească şi"
+        }
+      ],
+      "verse_num": "22"
+    },
+    {
+      "chunk_type": "section_title",
+      "position": 7,
+      "references": null,
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "păsările pe pământ.”"
+        }
+      ],
+      "verse_num": null
+    },
+    {
+      "chunk_type": "verse",
+      "position": 8,
+      "references": null,
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Gen. 8:17"
+        }
+      ],
+      "verse_num": "8"
+    },
+    {
+      "chunk_type": "verse",
+      "position": 9,
+      "references": null,
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Astfel a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a cincea."
+        }
+      ],
+      "verse_num": "23"
+    },
+    {
+      "chunk_type": "section_title",
+      "position": 10,
+      "references": null,
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Vieţuitoarele pământului"
+        }
+      ],
+      "verse_num": null
+    },
+    {
+      "chunk_type": "verse",
+      "position": 11,
+      "references": null,
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Dumnezeu a zis:"
+        },
+        {
+          "character_name": "Dumnezeu",
+          "role": "character",
+          "text": "Să dea pământul vieţuitoare după soiul lor, vite, târâtoare şi fiare pământeşti, după soiul lor."
+        },
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Şi aşa a fost."
+        }
+      ],
+      "verse_num": "24"
+    },
+    {
+      "chunk_type": "verse",
+      "position": 12,
+      "references": null,
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Dumnezeu a făcut fiarele pământului după soiul lor, vitele după soiul lor şi toate târâtoarele pământului după soiul lor. Dumnezeu a văzut că erau bune."
+        }
+      ],
+      "verse_num": "25"
+    },
+    {
+      "chunk_type": "verse",
+      "position": 13,
+      "references": null,
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Apoi Dumnezeu a zis:"
+        },
+        {
+          "character_name": "Dumnezeu",
+          "role": "character",
+          "text": "Să facem* om după chipul Nostru, după asemănarea Noastră; el să stăpânească** peste peştii mării, peste păsările cerului, peste vite, peste tot pământul şi peste toate târâtoarele care se mişcă pe"
+        }
+      ],
+      "verse_num": "26"
+    },
+    {
+      "chunk_type": "section_title",
+      "position": 14,
+      "references": null,
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "pământ.”"
+        }
+      ],
+      "verse_num": null
+    },
+    {
+      "chunk_type": "verse",
+      "position": 15,
+      "references": null,
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Gen. 5:1; Gen. 9:6; Ps. 100:3; Ecl. 7:29; Fap. 17:26, 28, 29; 1Cor. 11:7; Efes. 4:24; Col. 3:10; Iac. 3:9. **Gen. 9:2; Ps. 8:6"
+        }
+      ],
+      "verse_num": "15"
+    },
+    {
+      "chunk_type": "verse",
+      "position": 16,
+      "references": "1Cor. 11:7. **Gen. 5:2; Mal. 2:15; Mat. 19:4; Mar. 10:6",
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Dumnezeu a făcut pe om după* chipul Său, l-a făcut după chipul lui Dumnezeu; parte bărbătească** şi parte femeiască i-a făcut."
+        }
+      ],
+      "verse_num": "27"
+    },
+    {
+      "chunk_type": "verse",
+      "position": 17,
+      "references": "Gen. 9:1, 7; Lev. 26:9; Ps. 127:3; Ps. 128:3, 4",
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Dumnezeu i-a binecuvântat şi Dumnezeu le-a zis:"
+        },
+        {
+          "character_name": null,
+          "role": "character",
+          "text": "Creşteţi*, înmulţiţi-vă, umpleţi pământul şi supuneţi-l; şi stăpâniţi peste peştii mării, peste păsările cerului şi peste orice vieţuitoare care se mişcă pe pământ."
+        }
+      ],
+      "verse_num": "28"
+    },
+    {
+      "chunk_type": "verse",
+      "position": 18,
+      "references": "Gen. 9:3; Iov 36:31; Ps. 104:14, 15; Ps. 136:25; Ps. 146:7; Fap. 14:17",
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Şi Dumnezeu a zis:"
+        },
+        {
+          "character_name": "Dumnezeu",
+          "role": "character",
+          "text": "Iată că v-am dat orice iarbă care face sămânţă şi care este pe faţa întregului pământ şi orice pom care are în el rod cu sămânţă: aceasta să fie hrana* voastră."
+        }
+      ],
+      "verse_num": "29"
+    },
+    {
+      "chunk_type": "verse",
+      "position": 19,
+      "references": "Ps. 145:15, 16; Ps. 147:9. **Iov 38:41",
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Iar tuturor* fiarelor pământului, tuturor păsărilor** cerului şi tuturor vietăţilor care se mişcă pe pământ, care au în ele o suflare de viaţă, le-am dat ca hrană toată iarba verde.” Şi aşa a fost."
+        }
+      ],
+      "verse_num": "30"
+    },
+    {
+      "chunk_type": "verse",
+      "position": 20,
+      "references": "Ps. 104:24; 1Tim. 4:4",
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Dumnezeu S-a uitat* la tot ce făcuse; şi iată că erau foarte bune. Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a şasea."
+        }
+      ],
+      "verse_num": "31"
+    },
+    {
+      "chunk_type": "chapter_number",
+      "position": 21,
+      "references": null,
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Capitolul 2"
+        }
+      ],
+      "verse_num": null
+    },
+    {
+      "chunk_type": "chapter_name",
+      "position": 22,
+      "references": "Ps. 33:6",
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Ziua de odihnă"
+        }
+      ],
+      "verse_num": null
+    },
+    {
+      "chunk_type": "verse",
+      "position": 23,
+      "references": "Exod. 20:11; Exod. 31:17; Deut. 5:14; Evr. 4:4",
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "În ziua* a şaptea, Dumnezeu Şi-a sfârşit lucrarea pe care o făcuse; şi în ziua a şaptea S-a odihnit de toată lucrarea Lui pe care o făcuse."
+        }
+      ],
+      "verse_num": "2"
+    },
+    {
+      "chunk_type": "verse",
+      "position": 24,
+      "references": "Neem. 9:14; Isa. 58:13",
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Dumnezeu a binecuvântat* ziua a şaptea şi a sfinţit-o, pentru că în ziua aceasta S-a odihnit de toată lucrarea Lui pe care o zidise şi o făcuse."
+        }
+      ],
+      "verse_num": "3"
+    },
+    {
+      "chunk_type": "section_title",
+      "position": 25,
+      "references": null,
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Facerea omului"
+        }
+      ],
+      "verse_num": null
+    },
+    {
+      "chunk_type": "verse",
+      "position": 26,
+      "references": "Gen. 1:1; Ps. 90:1, 2",
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "Iată* istoria cerurilor şi a pământului, când au fost făcute."
+        }
+      ],
+      "verse_num": "4"
+    },
+    {
+      "chunk_type": "verse",
+      "position": 27,
+      "references": "Gen. 1:12; Ps. 104:14. **Iov 38:26, 27, 28. †Gen. 3:23",
+      "segments": [
+        {
+          "character_name": null,
+          "role": "narrator",
+          "text": "În ziua când a făcut Domnul Dumnezeu un pământ şi ceruri, nu era încă pe pământ niciun copăcel* de câmp şi nicio iarbă de pe câmp nu încolţea încă: fiindcă Domnul Dumnezeu nu dăduse încă ploaie** pe pământ şi nu era niciun om ca să lucreze† pământul."
+        }
+      ],
+      "verse_num": "5"
+    }
+  ],
+  "filename": "Biblia-in-limba-romana-Dumitru Cornilescu-6.pdf",
+  "format_lines": [
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "19. Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a patra."
+    },
+    {
+      "alignment": "left",
+      "font_size": 13,
+      "text": "Vieţuitoarele mării"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "20. Dumnezeu a zis: „Să mişune apele de vieţuitoare şi să zboare păsări deasupra pământului pe întinderea"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "cerului.”"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "21. Dumnezeu* a făcut peştii cei mari şi toate vieţuitoarele care se mişcă şi de care mişună apele, după soiurile"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "lor; a făcut şi orice pasăre înaripată după soiul ei. Dumnezeu a văzut că erau bune."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Gen. 6:20; Gen. 7:14; Gen. 8:19; Ps. 104:26"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "22. Dumnezeu le-a binecuvântat şi a zis: „Creşteţi*, înmulţiţi-vă şi umpleţi apele mărilor; să se înmulţească şi"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "păsările pe pământ.”"
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Gen. 8:17"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "23. Astfel a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a cincea."
+    },
+    {
+      "alignment": "left",
+      "font_size": 13,
+      "text": "Vieţuitoarele pământului"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "24. Dumnezeu a zis: „Să dea pământul vieţuitoare după soiul lor, vite, târâtoare şi fiare pământeşti, după soiul"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "lor.” Şi aşa a fost."
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "25. Dumnezeu a făcut fiarele pământului după soiul lor, vitele după soiul lor şi toate târâtoarele pământului după"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "soiul lor. Dumnezeu a văzut că erau bune."
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "26. Apoi Dumnezeu a zis: „Să facem* om după chipul Nostru, după asemănarea Noastră; el să stăpânească**"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "peste peştii mării, peste păsările cerului, peste vite, peste tot pământul şi peste toate târâtoarele care se mişcă pe"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "pământ.”"
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Gen. 5:1; Gen. 9:6; Ps. 100:3; Ecl. 7:29; Fap. 17:26, 28, 29; 1Cor. 11:7; Efes. 4:24; Col. 3:10; Iac. 3:9. **Gen. 9:2; Ps. 8:6"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "27. Dumnezeu a făcut pe om după* chipul Său, l-a făcut după chipul lui Dumnezeu; parte bărbătească** şi parte"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "femeiască i-a făcut."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*1Cor. 11:7. **Gen. 5:2; Mal. 2:15; Mat. 19:4; Mar. 10:6"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "28. Dumnezeu i-a binecuvântat şi Dumnezeu le-a zis: „Creşteţi*, înmulţiţi-vă, umpleţi pământul şi supuneţi-l; şi"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "stăpâniţi peste peştii mării, peste păsările cerului şi peste orice vieţuitoare care se mişcă pe pământ.”"
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Gen. 9:1, 7; Lev. 26:9; Ps. 127:3; Ps. 128:3, 4"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "29. Şi Dumnezeu a zis: „Iată că v-am dat orice iarbă care face sămânţă şi care este pe faţa întregului pământ şi"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "orice pom care are în el rod cu sămânţă: aceasta să fie hrana* voastră."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Gen. 9:3; Iov 36:31; Ps. 104:14, 15; Ps. 136:25; Ps. 146:7; Fap. 14:17"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "30. Iar tuturor* fiarelor pământului, tuturor păsărilor** cerului şi tuturor vietăţilor care se mişcă pe pământ, care"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "au în ele o suflare de viaţă, le-am dat ca hrană toată iarba verde.” Şi aşa a fost."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Ps. 145:15, 16; Ps. 147:9. **Iov 38:41"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "31. Dumnezeu S-a uitat* la tot ce făcuse; şi iată că erau foarte bune. Astfel, a fost o seară, şi apoi a fost o"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "dimineaţă: aceasta a fost ziua a şasea."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Ps. 104:24; 1Tim. 4:4"
+    },
+    {
+      "alignment": "left",
+      "font_size": 13,
+      "text": "Capitolul 2"
+    },
+    {
+      "alignment": "left",
+      "font_size": 13,
+      "text": "Ziua de odihnă"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "1. Astfel au fost sfârşite cerurile şi pământul şi toată* oştirea lor."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Ps. 33:6"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "2. În ziua* a şaptea, Dumnezeu Şi-a sfârşit lucrarea pe care o făcuse; şi în ziua a şaptea S-a odihnit de toată"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "lucrarea Lui pe care o făcuse."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Exod. 20:11; Exod. 31:17; Deut. 5:14; Evr. 4:4"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "3. Dumnezeu a binecuvântat* ziua a şaptea şi a sfinţit-o, pentru că în ziua aceasta S-a odihnit de toată lucrarea"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "Lui pe care o zidise şi o făcuse."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Neem. 9:14; Isa. 58:13"
+    },
+    {
+      "alignment": "left",
+      "font_size": 13,
+      "text": "Facerea omului"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "4. Iată* istoria cerurilor şi a pământului, când au fost făcute."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Gen. 1:1; Ps. 90:1, 2"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "5. În ziua când a făcut Domnul Dumnezeu un pământ şi ceruri, nu era încă pe pământ niciun copăcel* de câmp şi"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "nicio iarbă de pe câmp nu încolţea încă: fiindcă Domnul Dumnezeu nu dăduse încă ploaie** pe pământ şi nu era"
+    },
+    {
+      "alignment": "left",
+      "font_size": 12,
+      "text": "niciun om ca să lucreze† pământul."
+    },
+    {
+      "alignment": "left",
+      "font_size": 9,
+      "text": "*Gen. 1:12; Ps. 104:14. **Iov 38:26, 27, 28. †Gen. 3:23"
+    }
+  ],
+  "language": "ro",
+  "language_name": "Romanian",
+  "pipeline": "bible",
+  "tts_preview": {
+    "chunk_count": 34,
+    "chunks": [
+      {
+        "character_count": 80,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 1,
+        "role": "narrator",
+        "text_for_tts": "Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a patra.",
+        "text_raw": "Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a patra.",
+        "verse_num": "19"
+      },
+      {
+        "character_count": 20,
+        "character_name": null,
+        "chunk_type": "section_title",
+        "position": 2,
+        "role": "narrator",
+        "text_for_tts": "Vieţuitoarele mării!",
+        "text_raw": "Vieţuitoarele mării",
+        "verse_num": null
+      },
+      {
+        "character_count": 15,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 3,
+        "role": "narrator",
+        "text_for_tts": "Dumnezeu a zis:",
+        "text_raw": "Dumnezeu a zis:",
+        "verse_num": "20"
+      },
+      {
+        "character_count": 84,
+        "character_name": "Dumnezeu",
+        "chunk_type": "verse",
+        "position": 4,
+        "role": "character",
+        "text_for_tts": "Să mişune apele de vieţuitoare şi să zboare păsări deasupra pământului pe întinderea",
+        "text_raw": "Să mişune apele de vieţuitoare şi să zboare păsări deasupra pământului pe întinderea",
+        "verse_num": "20"
+      },
+      {
+        "character_count": 10,
+        "character_name": null,
+        "chunk_type": "section_title",
+        "position": 5,
+        "role": "narrator",
+        "text_for_tts": "cerului.”!",
+        "text_raw": "cerului.”",
+        "verse_num": null
+      },
+      {
+        "character_count": 193,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 6,
+        "role": "narrator",
+        "text_for_tts": "Dumnezeu a făcut peştii cei mari şi toate vieţuitoarele care se mişcă şi de care mişună apele, după soiurile lor; a făcut şi orice pasăre înaripată după soiul ei. Dumnezeu a văzut că erau bune.",
+        "text_raw": "Dumnezeu* a făcut peştii cei mari şi toate vieţuitoarele care se mişcă şi de care mişună apele, după soiurile lor; a făcut şi orice pasăre înaripată după soiul ei. Dumnezeu a văzut că erau bune.",
+        "verse_num": "21"
+      },
+      {
+        "character_count": 36,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 7,
+        "role": "narrator",
+        "text_for_tts": "Dumnezeu le-a binecuvântat şi a zis:",
+        "text_raw": "Dumnezeu le-a binecuvântat şi a zis:",
+        "verse_num": "22"
+      },
+      {
+        "character_count": 70,
+        "character_name": "Dumnezeu",
+        "chunk_type": "verse",
+        "position": 8,
+        "role": "character",
+        "text_for_tts": "Creşteţi , înmulţiţi-vă şi umpleţi apele mărilor; să se înmulţească şi",
+        "text_raw": "Creşteţi*, înmulţiţi-vă şi umpleţi apele mărilor; să se înmulţească şi",
+        "verse_num": "22"
+      },
+      {
+        "character_count": 21,
+        "character_name": null,
+        "chunk_type": "section_title",
+        "position": 9,
+        "role": "narrator",
+        "text_for_tts": "păsările pe pământ.”!",
+        "text_raw": "păsările pe pământ.”",
+        "verse_num": null
+      },
+      {
+        "character_count": 0,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 10,
+        "role": "narrator",
+        "text_for_tts": "",
+        "text_raw": "Gen. 8:17",
+        "verse_num": "8"
+      },
+      {
+        "character_count": 80,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 11,
+        "role": "narrator",
+        "text_for_tts": "Astfel a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a cincea.",
+        "text_raw": "Astfel a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a cincea.",
+        "verse_num": "23"
+      },
+      {
+        "character_count": 25,
+        "character_name": null,
+        "chunk_type": "section_title",
+        "position": 12,
+        "role": "narrator",
+        "text_for_tts": "Vieţuitoarele pământului!",
+        "text_raw": "Vieţuitoarele pământului",
+        "verse_num": null
+      },
+      {
+        "character_count": 15,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 13,
+        "role": "narrator",
+        "text_for_tts": "Dumnezeu a zis:",
+        "text_raw": "Dumnezeu a zis:",
+        "verse_num": "24"
+      },
+      {
+        "character_count": 96,
+        "character_name": "Dumnezeu",
+        "chunk_type": "verse",
+        "position": 14,
+        "role": "character",
+        "text_for_tts": "Să dea pământul vieţuitoare după soiul lor, vite, târâtoare şi fiare pământeşti, după soiul lor.",
+        "text_raw": "Să dea pământul vieţuitoare după soiul lor, vite, târâtoare şi fiare pământeşti, după soiul lor.",
+        "verse_num": "24"
+      },
+      {
+        "character_count": 14,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 15,
+        "role": "narrator",
+        "text_for_tts": "Şi aşa a fost.",
+        "text_raw": "Şi aşa a fost.",
+        "verse_num": "24"
+      },
+      {
+        "character_count": 152,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 16,
+        "role": "narrator",
+        "text_for_tts": "Dumnezeu a făcut fiarele pământului după soiul lor, vitele după soiul lor şi toate târâtoarele pământului după soiul lor. Dumnezeu a văzut că erau bune.",
+        "text_raw": "Dumnezeu a făcut fiarele pământului după soiul lor, vitele după soiul lor şi toate târâtoarele pământului după soiul lor. Dumnezeu a văzut că erau bune.",
+        "verse_num": "25"
+      },
+      {
+        "character_count": 20,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 17,
+        "role": "narrator",
+        "text_for_tts": "Apoi Dumnezeu a zis:",
+        "text_raw": "Apoi Dumnezeu a zis:",
+        "verse_num": "26"
+      },
+      {
+        "character_count": 193,
+        "character_name": "Dumnezeu",
+        "chunk_type": "verse",
+        "position": 18,
+        "role": "character",
+        "text_for_tts": "Să facem om după chipul Nostru, după asemănarea Noastră; el să stăpânească peste peştii mării, peste păsările cerului, peste vite, peste tot pământul şi peste toate târâtoarele care se mişcă pe",
+        "text_raw": "Să facem* om după chipul Nostru, după asemănarea Noastră; el să stăpânească** peste peştii mării, peste păsările cerului, peste vite, peste tot pământul şi peste toate târâtoarele care se mişcă pe",
+        "verse_num": "26"
+      },
+      {
+        "character_count": 9,
+        "character_name": null,
+        "chunk_type": "section_title",
+        "position": 19,
+        "role": "narrator",
+        "text_for_tts": "pământ.”!",
+        "text_raw": "pământ.”",
+        "verse_num": null
+      },
+      {
+        "character_count": 0,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 20,
+        "role": "narrator",
+        "text_for_tts": "",
+        "text_raw": "Gen. 5:1; Gen. 9:6; Ps. 100:3; Ecl. 7:29; Fap. 17:26, 28, 29; 1Cor. 11:7; Efes. 4:24; Col. 3:10; Iac. 3:9. **Gen. 9:2; Ps. 8:6",
+        "verse_num": "15"
+      },
+      {
+        "character_count": 123,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 21,
+        "role": "narrator",
+        "text_for_tts": "Dumnezeu a făcut pe om după chipul Său, l-a făcut după chipul lui Dumnezeu; parte bărbătească şi parte femeiască i-a făcut.",
+        "text_raw": "Dumnezeu a făcut pe om după* chipul Său, l-a făcut după chipul lui Dumnezeu; parte bărbătească** şi parte femeiască i-a făcut.",
+        "verse_num": "27"
+      },
+      {
+        "character_count": 47,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 22,
+        "role": "narrator",
+        "text_for_tts": "Dumnezeu i-a binecuvântat şi Dumnezeu le-a zis:",
+        "text_raw": "Dumnezeu i-a binecuvântat şi Dumnezeu le-a zis:",
+        "verse_num": "28"
+      },
+      {
+        "character_count": 164,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 23,
+        "role": "character",
+        "text_for_tts": "Creşteţi , înmulţiţi-vă, umpleţi pământul şi supuneţi-l; şi stăpâniţi peste peştii mării, peste păsările cerului şi peste orice vieţuitoare care se mişcă pe pământ.",
+        "text_raw": "Creşteţi*, înmulţiţi-vă, umpleţi pământul şi supuneţi-l; şi stăpâniţi peste peştii mării, peste păsările cerului şi peste orice vieţuitoare care se mişcă pe pământ.",
+        "verse_num": "28"
+      },
+      {
+        "character_count": 18,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 24,
+        "role": "narrator",
+        "text_for_tts": "Şi Dumnezeu a zis:",
+        "text_raw": "Şi Dumnezeu a zis:",
+        "verse_num": "29"
+      },
+      {
+        "character_count": 159,
+        "character_name": "Dumnezeu",
+        "chunk_type": "verse",
+        "position": 25,
+        "role": "character",
+        "text_for_tts": "Iată că v-am dat orice iarbă care face sămânţă şi care este pe faţa întregului pământ şi orice pom care are în el rod cu sămânţă: aceasta să fie hrana voastră.",
+        "text_raw": "Iată că v-am dat orice iarbă care face sămânţă şi care este pe faţa întregului pământ şi orice pom care are în el rod cu sămânţă: aceasta să fie hrana* voastră.",
+        "verse_num": "29"
+      },
+      {
+        "character_count": 194,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 26,
+        "role": "narrator",
+        "text_for_tts": "Iar tuturor fiarelor pământului, tuturor păsărilor cerului şi tuturor vietăţilor care se mişcă pe pământ, care au în ele o suflare de viaţă, le-am dat ca hrană toată iarba verde.” Şi aşa a fost.",
+        "text_raw": "Iar tuturor* fiarelor pământului, tuturor păsărilor** cerului şi tuturor vietăţilor care se mişcă pe pământ, care au în ele o suflare de viaţă, le-am dat ca hrană toată iarba verde.” Şi aşa a fost.",
+        "verse_num": "30"
+      },
+      {
+        "character_count": 146,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 27,
+        "role": "narrator",
+        "text_for_tts": "Dumnezeu S-a uitat la tot ce făcuse; şi iată că erau foarte bune. Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a şasea.",
+        "text_raw": "Dumnezeu S-a uitat* la tot ce făcuse; şi iată că erau foarte bune. Astfel, a fost o seară, şi apoi a fost o dimineaţă: aceasta a fost ziua a şasea.",
+        "verse_num": "31"
+      },
+      {
+        "character_count": 12,
+        "character_name": null,
+        "chunk_type": "chapter_number",
+        "position": 28,
+        "role": "narrator",
+        "text_for_tts": "Capitolul 2!",
+        "text_raw": "Capitolul 2",
+        "verse_num": null
+      },
+      {
+        "character_count": 15,
+        "character_name": null,
+        "chunk_type": "chapter_name",
+        "position": 29,
+        "role": "narrator",
+        "text_for_tts": "Ziua de odihnă!",
+        "text_raw": "Ziua de odihnă",
+        "verse_num": null
+      },
+      {
+        "character_count": 138,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 30,
+        "role": "narrator",
+        "text_for_tts": "În ziua a şaptea, Dumnezeu Şi-a sfârşit lucrarea pe care o făcuse; şi în ziua a şaptea S-a odihnit de toată lucrarea Lui pe care o făcuse.",
+        "text_raw": "În ziua* a şaptea, Dumnezeu Şi-a sfârşit lucrarea pe care o făcuse; şi în ziua a şaptea S-a odihnit de toată lucrarea Lui pe care o făcuse.",
+        "verse_num": "2"
+      },
+      {
+        "character_count": 143,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 31,
+        "role": "narrator",
+        "text_for_tts": "Dumnezeu a binecuvântat ziua a şaptea şi a sfinţit-o, pentru că în ziua aceasta S-a odihnit de toată lucrarea Lui pe care o zidise şi o făcuse.",
+        "text_raw": "Dumnezeu a binecuvântat* ziua a şaptea şi a sfinţit-o, pentru că în ziua aceasta S-a odihnit de toată lucrarea Lui pe care o zidise şi o făcuse.",
+        "verse_num": "3"
+      },
+      {
+        "character_count": 15,
+        "character_name": null,
+        "chunk_type": "section_title",
+        "position": 32,
+        "role": "narrator",
+        "text_for_tts": "Facerea omului!",
+        "text_raw": "Facerea omului",
+        "verse_num": null
+      },
+      {
+        "character_count": 60,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 33,
+        "role": "narrator",
+        "text_for_tts": "Iată istoria cerurilor şi a pământului, când au fost făcute.",
+        "text_raw": "Iată* istoria cerurilor şi a pământului, când au fost făcute.",
+        "verse_num": "4"
+      },
+      {
+        "character_count": 246,
+        "character_name": null,
+        "chunk_type": "verse",
+        "position": 34,
+        "role": "narrator",
+        "text_for_tts": "În ziua când a făcut Domnul Dumnezeu un pământ şi ceruri, nu era încă pe pământ niciun copăcel de câmp şi nicio iarbă de pe câmp nu încolţea încă: fiindcă Domnul Dumnezeu nu dăduse încă ploaie pe pământ şi nu era niciun om ca să lucreze pământul.",
+        "text_raw": "În ziua când a făcut Domnul Dumnezeu un pământ şi ceruri, nu era încă pe pământ niciun copăcel* de câmp şi nicio iarbă de pe câmp nu încolţea încă: fiindcă Domnul Dumnezeu nu dăduse încă ploaie** pe pământ şi nu era niciun om ca să lucreze† pământul.",
+        "verse_num": "5"
+      }
+    ],
+    "total_character_count": 2613
+  }
+}

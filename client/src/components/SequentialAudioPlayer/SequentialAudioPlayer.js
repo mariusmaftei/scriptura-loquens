@@ -12,6 +12,9 @@ const SequentialAudioPlayer = ({
   onChunkChange,
   onPlayingChange,
   onPlayButtonClick,
+  onAllChunksEnded = null,
+  initialAutoPlay = false,
+  onAutoPlayStarted = null,
   ambientTrackUrl = null,
   customNarratorName = null,
   customVoiceActorName = null,
@@ -25,6 +28,7 @@ const SequentialAudioPlayer = ({
   const audioRef = useRef(null);
   const ambientRef = useRef(null);
   const currentChunkIdRef = useRef(null);
+  const autoPlayDoneRef = useRef(false);
 
   const sortedChunks = useMemo(
     () => [...chunks].sort((a, b) => a.position - b.position),
@@ -39,6 +43,12 @@ const SequentialAudioPlayer = ({
     const audioFile = chunkAudioMap.get(chunkId);
     return audioFile ? getAudioFileUrl(audioFile.id) : null;
   };
+
+  useEffect(() => {
+    if (initialAutoPlay) {
+      autoPlayDoneRef.current = false;
+    }
+  }, [initialAutoPlay]);
 
   useEffect(() => {
     if (startFromChunkId !== null && sortedChunks.length > 0) {
@@ -77,6 +87,9 @@ const SequentialAudioPlayer = ({
         } else {
           setIsPlaying(false);
           setCurrentTime(0);
+          if (sortedChunks.length > 0) {
+            onAllChunksEnded?.();
+          }
           return prev;
         }
       });
@@ -103,7 +116,7 @@ const SequentialAudioPlayer = ({
       audio.removeEventListener("ended", handleEnded);
       audio.removeEventListener("error", handleError);
     };
-  }, [sortedChunks.length, playOnlyChunkId]);
+  }, [sortedChunks.length, playOnlyChunkId, onAllChunksEnded]);
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -130,10 +143,28 @@ const SequentialAudioPlayer = ({
 
     if (isPlaying) {
       audio.play().catch(() => setIsPlaying(false));
+    } else if (initialAutoPlay && !autoPlayDoneRef.current && audioUrl) {
+      autoPlayDoneRef.current = true;
+      const doPlay = () => {
+        audio.play().then(() => {
+          setIsPlaying(true);
+          onAutoPlayStarted?.();
+        }).catch(() => {});
+      };
+      const onCanPlay = () => {
+        audio.removeEventListener("canplay", onCanPlay);
+        doPlay();
+      };
+      audio.addEventListener("canplay", onCanPlay);
+      if (audio.readyState >= 2) {
+        onCanPlay();
+      } else {
+        audio.load();
+      }
     }
 
     onChunkChange?.(currentChunk.id);
-  }, [currentIndex, sortedChunks.length, isPlaying, volume]);
+  }, [currentIndex, sortedChunks.length, isPlaying, volume, initialAutoPlay, onAutoPlayStarted]);
 
   useEffect(() => {
     if (startFromChunkId !== null) {

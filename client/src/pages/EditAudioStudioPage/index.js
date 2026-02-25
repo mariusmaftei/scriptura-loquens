@@ -25,6 +25,8 @@ const EditAudioStudioPage = () => {
   const [narratorName, setNarratorName] = useState("");
   const [voiceActorName, setVoiceActorName] = useState("");
   const [submitting, setSubmitting] = useState(false);
+  const [namesSaved, setNamesSaved] = useState(false);
+  const [namesSaveError, setNamesSaveError] = useState(null);
   const [expandedChunkId, setExpandedChunkId] = useState(null);
   const [previewChunkId, setPreviewChunkId] = useState(null);
   const [countdownValue, setCountdownValue] = useState(null);
@@ -289,6 +291,22 @@ const EditAudioStudioPage = () => {
     }
   };
 
+  const handleSaveNamesOnly = async () => {
+    if (!pdfId) return;
+    try {
+      setNamesSaveError(null);
+      setNamesSaved(false);
+      await pdfAPI.updateCustomVoiceNames(pdfId, {
+        custom_narrator_name: narratorName.trim() || null,
+        custom_voice_actor_name: voiceActorName.trim() || null,
+      });
+      setNamesSaved(true);
+      setTimeout(() => setNamesSaved(false), 3000);
+    } catch (err) {
+      setNamesSaveError(err.response?.data?.error || "Eroare la salvare");
+    }
+  };
+
   if (loading) {
     return (
       <Container>
@@ -355,6 +373,22 @@ const EditAudioStudioPage = () => {
             Aceste nume vor apărea în vizualizarea documentului pentru a găsi
             înregistrarea ta custom.
           </p>
+          <div className={styles.saveNamesRow}>
+            <button
+              type="button"
+              className={styles.saveNamesBtn}
+              onClick={handleSaveNamesOnly}
+              disabled={submitting}
+            >
+              Salvează nume
+            </button>
+            {namesSaved && (
+              <span className={styles.namesSavedOk}>Numele au fost salvate.</span>
+            )}
+            {namesSaveError && (
+              <span className={styles.namesSaveErr}>{namesSaveError}</span>
+            )}
+          </div>
 
           <div className={styles.filterRow}>
             <span className={styles.filterLabel}>Afișează:</span>

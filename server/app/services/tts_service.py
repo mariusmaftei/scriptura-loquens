@@ -12,6 +12,31 @@ from app.utils.file_handler import ensure_directory_exists
 
 GOD_CHARACTER_NAMES = frozenset({'dumnezeu', 'god', 'domnul', 'lord', 'yahweh', 'elohim'})
 
+CHARACTER_NAME_PREFIXES = (
+    'apoi', 'și', 'si', 'iar', 'dar', 'atunci', 'acolo', 'aici', 'însă', 'insa',
+    'deci', 'totuși', 'totusi', 'prin', 'după', 'dupa',
+)
+
+
+def normalize_character_name_for_voice(name):
+    """Map 'Apoi Dumnezeu' -> 'Dumnezeu' so voice selection dedupes and lookup matches."""
+    if not name or not (name := (name or '').strip().rstrip('*†').strip()):
+        return None
+    low = name.lower()
+    if low in GOD_CHARACTER_NAMES:
+        return name
+    for prefix in CHARACTER_NAME_PREFIXES:
+        if low.startswith(prefix):
+            rest = name[len(prefix):].strip()
+            if rest:
+                return normalize_character_name_for_voice(rest)
+            break
+    if ' ' in name:
+        for part in name.split():
+            if part.lower() in GOD_CHARACTER_NAMES:
+                return part
+    return name
+
 def remove_verse_number_from_text(text, chunk_type=None):
     """Remove verse numbers from the beginning of text for TTS.
     
@@ -500,18 +525,52 @@ def _pdf_ref_from_filename(pdf_filename, pdf_id):
     return name or f"pdf_{pdf_id}"
 
 
+def get_voice_name_for_id(voice_id, language_code):
+    """Resolve display name for a voice_id from available voices (for readable folder names)."""
+    if not voice_id:
+        return None
+    try:
+        voices = get_available_voices_for_language(language_code or 'en')
+        for v in voices:
+            if v.get('voice_id') == voice_id:
+                return v.get('voice_name') or voice_id
+    except Exception:
+        pass
+    if '-' in voice_id and len(voice_id) > 10:
+        part = voice_id.split('-')[-1]
+        if part and part.isalpha():
+            return part
+    return None
+
+
 def _actor_slug(voice_id, voice_name=None):
-    """Folder name for the chosen voice/actor (e.g. Bob, en-US-Standard-A -> bob, en-us-standard-a)."""
+    """Folder name for the voice actor: readable name, or fallback from voice_id, or voice-<short_id>."""
     if (voice_name or '').strip():
         slug = re.sub(r'[^\w\s-]', '', (voice_name or '').strip())
-    else:
-        slug = (voice_id or '').strip()
-    slug = re.sub(r'[-\s]+', '-', slug).strip('-').lower()[:40] or 'voice'
-    return slug or 'voice'
+        slug = re.sub(r'[-\s]+', '-', slug).strip('-').lower()[:40]
+        if slug:
+            return slug
+    if (voice_id or '').strip():
+        vid = (voice_id or '').strip()
+        if '-' in vid and len(vid) > 10:
+            part = vid.split('-')[-1]
+            if part and len(part) >= 2 and part.isalpha():
+                return part.lower()[:40]
+        if vid.isalnum() and len(vid) >= 12:
+            return f"voice-{vid[:8]}"
+        slug = re.sub(r'[^\w\s-]', '', vid)
+        slug = re.sub(r'[-\s]+', '-', slug).strip('-').lower()[:40]
+        if slug:
+            return slug
+    return 'voice'
 
 
 def save_audio_file(audio_content, chunk_id, audio_folder, pdf_id=None, pdf_filename=None, voice_id=None, chunk=None, voice_settings_hash=None, voice_name=None, character_slug=None, actor_slug=None):
-    """Save audio with structure: transcriptions/<pdf_ref>/<character>/<actor>/seg....mp3"""
+    """Save audio with structure: transcriptions/<pdf_ref>/<character>/<actor>/seg....mp3
+    pdf_ref = sanitized PDF name (e.g. biblia-in-limba-romana-dumitru-cornilescu-page-5).
+    character = narrator | character slug (e.g. dumnezeu).
+    actor = voice actor name for readability (e.g. fenrir, enceladus); fallback voice-<id> when name unknown.
+    """
     hash_suffix = (voice_settings_hash or "")[:8] if voice_settings_hash else ""
     if chunk is not None:
         pos = getattr(chunk, 'position', 0)
